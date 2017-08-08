@@ -1,0 +1,448 @@
+{
+	"std_id": "121AF0021",
+	"student_name": "Kalyan Babu",
+	"Course": "BTech-CSE",
+	"Batch": "2014",
+	"present_year": "2",
+	"present_sem": "2",
+	"phone_number": "994513313",
+	"email_id": "jana.yerranagu@gmail.com",
+	"previous_education_details": {
+		"success": "1",
+		"previous_education": [{
+			"marks": "98",
+			"exam_name": "SSC",
+			"year": "2012",
+			"institute": "Ring Bell School",
+			"city": "Guntur",
+			"State": "Andhra pradesh",
+			"country": "india"
+		}, {
+			"marks": "92",
+			"exam_name": "Inter",
+			"year": "2014",
+			"institute": "Narayana Jr. College",
+			"city": "Guntur",
+			"State": "Andhra pradesh",
+			"country": "india"
+		}]
+
+	},
+
+	"family_details": {
+		"fathername": "Goapal",
+		"f_occupation": "bussiness",
+		"f_phone_number": "7386781357",
+		"mothername": "shanthi",
+		"m_occupation": "bussiness",
+		"m_phone_number": "7386781357"
+
+	},
+	"previous_sem_detials": {
+		"success": "1",
+		"Total_subjects": "15",
+		"passed_subjects": "13",
+		"pass_percentage": "65.8",
+		"previous_sem": [{
+			"pass_percentage": "75.2",
+			"sem_name": "1 Year 1 Semester",
+			"subjects": [{
+				"subject_name": "Calculus",
+				"short_name": "CAL",
+				"Faculty_name": "Sunil",
+				"Faculty_id": "12",
+				"Internal_marks": "26",
+				"External_marks": "58",
+				"status": "P",
+				"pass_yr": "DEC-2014"
+			}, {
+				"subject_name": "Applied Physics",
+				"short_name": "PHY",
+				"Faculty_name": "Sunitha",
+				"Faculty_id": "21",
+				"Internal_marks": "23",
+				"External_marks": "36",
+				"status": "P",
+				"pass_yr": "DEC-2014"
+			}, {
+				"subject_name": "Engineering Graphics",
+				"short_name": "ENGRA",
+				"Faculty_name": "Nirmala",
+				"Faculty_id": "23",
+				"Internal_marks": "22",
+				"External_marks": "64",
+				"status": "P",
+				"pass_yr": "DEC-2014"
+			}, {
+				"subject_name": "English - Foreign Language",
+				"short_name": "ENG",
+				"Faculty_name": "Raghu Ram",
+				"Faculty_id": "23",
+				"Internal_marks": "26",
+				"External_marks": "56",
+				"status": "P",
+				"pass_yr": "DEC-2014"
+			}, {
+				"subject_name": "Mechanical Workshop Practices",
+				"short_name": "MECH",
+				"Faculty_name": "Ravi Ram",
+				"Faculty_id": "23",
+				"Internal_marks": "22",
+				"External_marks": "43",
+				"status": "P",
+				"pass_yr": "DEC-2014"
+			}]
+		}, {
+			"pass_percentage": "66.0",
+			"sem_name": "1 Year 2 Semester",
+			"subjects": [{
+				"subject_name": "Linear Algebra",
+				"short_name": "LNAL",
+				"Faculty_name": "mehamudha",
+				"Faculty_id": "34",
+				"Internal_marks": "23",
+				"External_marks": "38",
+				"status": "P",
+				"pass_yr": "JUN-2015"
+			}, {
+				"subject_name": "Art of Programming",
+				"short_name": "AOP",
+				"Faculty_name": "senu",
+				"Faculty_id": "28",
+				"Internal_marks": "25",
+				"External_marks": "44",
+				"status": "P",
+				"pass_yr": "JUN-2015"
+			}, {
+				"subject_name": "Elements of Electrical Engineering",
+				"short_name": "EEE",
+				"Faculty_name": "Reshmi",
+				"Faculty_id": "29",
+				"Internal_marks": "24",
+				"External_marks": "20",
+				"status": "F",
+				"pass_yr": "JUN-2016"
+			}, {
+				"subject_name": "Electrical Workshop Practices",
+				"short_name": "EW LAB",
+				"Faculty_name": "Raju",
+				"Faculty_id": "78",
+				"Internal_marks": "23",
+				"External_marks": "45",
+				"status": "P",
+				"pass_yr": "JUN-2015"
+			}, {
+				"subject_name": "English Communication Lab",
+				"short_name": "EC Lab",
+				"Faculty_name": "Haritha",
+				"Faculty_id": "54",
+				"Internal_marks": "27",
+				"External_marks": "61",
+				"status": "P",
+				"pass_yr": "JUN-2015"
+			}]
+		}, {
+			"pass_percentage": "56.4",
+			"sem_name": "2 Year 1 Semester",
+			"subjects": [{
+				"subject_name": "Basic Electronics",
+				"short_name": "BELec",
+				"Faculty_name": "shradha",
+				"Faculty_id": "45",
+				"Internal_marks": "17",
+				"External_marks": "47",
+				"status": "P",
+				"pass_yr": "DEC-2015"
+			}, {
+				"subject_name": "Object Oriented Programming",
+				"short_name": "OOP",
+				"Faculty_name": "Anil",
+				"Faculty_id": "74",
+				"Internal_marks": "23",
+				"External_marks": "40",
+				"status": "P",
+				"pass_yr": "DEC-2015"
+			}, {
+				"subject_name": "EleComputer Graphics and Visualization",
+				"short_name": "EGV",
+				"Faculty_name": "Reshmi",
+				"Faculty_id": "29",
+				"Internal_marks": "25",
+				"External_marks": "25",
+				"status": "F",
+				"pass_yr": "NA"
+			}, {
+				"subject_name": "Advanced Computer Networks",
+				"short_name": "ACN",
+				"Faculty_name": "Parshuram",
+				"Faculty_id": "78",
+				"Internal_marks": "15",
+				"External_marks": "18",
+				"status": "F",
+				"pass_yr": "NA"
+			}, {
+				"subject_name": "Object Oriented Programming Lab",
+				"short_name": "OOP Lab",
+				"Faculty_name": "Kiran",
+				"Faculty_id": "78",
+				"Internal_marks": "25",
+				"External_marks": "47",
+				"status": "P",
+				"pass_yr": "DEC-2015"
+			}]
+		}]
+
+	},
+	"present_sem_detials": {
+		"success": "1",
+		"present_sem": {
+			"working_days": "577",
+			"present_days": "348",
+			"a_overall_per": "67.3",
+			"subjects": [{
+				"subject_name": "Java Enterprise Edition ",
+				"short_name": "J2EE",
+				"Faculty_name": "Sunil",
+				"Faculty_id": "12",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "18",
+					"max_marks": "30",
+					"attendance": "67.5",
+					"total_classes": "37",
+					"classes_present": "25"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "27",
+					"max_marks": "30",
+					"attendance": "86.1",
+					"total_classes": "36",
+					"classes_present": "31"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "19",
+					"max_marks": "30",
+					"attendance": "94.4",
+					"total_classes": "36",
+					"classes_present": "34"
+				}]
+			}, {
+				"subject_name": "Entrepreneurship",
+				"short_name": "Entr",
+				"Faculty_name": "Janrdhan",
+				"Faculty_id": "14",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "21",
+					"max_marks": "30",
+					"attendance": "64.8",
+					"total_classes": "37",
+					"classes_present": "24"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "26",
+					"max_marks": "30",
+					"attendance": "69.4",
+					"total_classes": "36",
+					"classes_present": "25"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "16",
+					"max_marks": "30",
+					"attendance": "69.4",
+					"total_classes": "36",
+					"classes_present": "25"
+				}]
+			}, {
+				"subject_name": "Mathematical foundation of Computer Science",
+				"short_name": "MFCS",
+				"Faculty_name": "Suman",
+				"Faculty_id": "13",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "23",
+					"max_marks": "30",
+					"attendance": "56.7",
+					"total_classes": "37",
+					"classes_present": "21"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "28",
+					"max_marks": "30",
+					"attendance": "66.6",
+					"total_classes": "36",
+					"classes_present": "24"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "26",
+					"max_marks": "30",
+					"attendance": "61.1",
+					"total_classes": "36",
+					"classes_present": "22"
+				}]
+			}, {
+				"subject_name": "Data Structures",
+				"short_name": "DS",
+				"Faculty_name": "Kiran Rao",
+				"Faculty_id": "15",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "17",
+					"max_marks": "30",
+					"attendance": "81.0",
+					"total_classes": "37",
+					"classes_present": "30"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "27",
+					"max_marks": "30",
+					"attendance": "80.5",
+					"total_classes": "36",
+					"classes_present": "29"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "25",
+					"max_marks": "30",
+					"attendance": "68.1",
+					"total_classes": "36",
+					"classes_present": "31"
+				}]
+			}, {
+				"subject_name": "Database Management Systems",
+				"short_name": "DMS",
+				"Faculty_name": "Raghu Ram",
+				"Faculty_id": "16",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "22",
+					"max_marks": "30",
+					"attendance": "94.5",
+					"total_classes": "37",
+					"classes_present": "35"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "28",
+					"max_marks": "30",
+					"attendance": "100",
+					"total_classes": "36",
+					"classes_present": "36"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "27",
+					"max_marks": "30",
+					"attendance": "91.6",
+					"total_classes": "36",
+					"classes_present": "33"
+				}]
+			}, {
+				"subject_name": "Database Management Systems Lab",
+				"short_name": "DMS Lab",
+				"Faculty_name": "Raghu Ram",
+				"Faculty_id": "17",
+				"mids": [{
+					"exam_name": "MID 1",
+					"marks": "21",
+					"max_marks": "30",
+					"attendance": "66.6",
+					"total_classes": "12",
+					"classes_present": "8"
+				}, {
+					"exam_name": "MID 2",
+					"marks": "25",
+					"max_marks": "30",
+					"attendance": "83.3",
+					"total_classes": "12",
+					"classes_present": "10"
+				}, {
+					"exam_name": "MID 3",
+					"marks": "24",
+					"max_marks": "30",
+					"attendance": "62.5",
+					"total_classes": "8",
+					"classes_present": "5"
+				}]
+			}],
+			"date_wise": [{
+				"from_date": "10/12/2015",
+				"to_date": "31/1/2016",
+
+				"percentage": "60.4",
+				"byvalue": "116/192",
+				"subjects": [{
+					"subject_name": "Java Enterprise Edition ",
+					"working": "32",
+					"present": "18",
+					"avg": "56.6"
+
+				}, {
+					"subject_name": "Entrepreneurship",
+					"working": "32",
+					"present": "19",
+					"avg": "59.6"
+
+				}, {
+					"subject_name": "Mathematical foundation of Computer Science",
+					"working": "32",
+					"present": "21",
+					"avg": "65"
+				}, {
+					"subject_name": "Data Structures",
+					"working": "32",
+					"present": "25",
+					"avg": "78.7"
+				}, {
+					"subject_name": "Database Management Systems",
+					"working": "32",
+					"present": "20",
+					"avg": "62.5"
+				}, {
+					"subject_name": "Database Management Systems Lab",
+					"working": "32",
+					"present": "19",
+					"avg": "59"
+
+				}]
+			}, {
+				"from_date": "1/2/2016",
+				"to_date": "31/3/2016",
+				"percentage": "66.7",
+				"byvalue": "130/192",
+				"subjects": [{
+					"subject_name": "Java Enterprise Edition ",
+					"working": "32",
+					"present": "22",
+					"avg": "68"
+
+				}, {
+					"subject_name": "Entrepreneurship",
+					"working": "32",
+					"present": "21",
+					"avg": "65.6"
+
+				}, {
+					"subject_name": "Mathematical foundation of Computer Science",
+					"working": "32",
+					"present": "18",
+					"avg": "56"
+				}, {
+					"subject_name": "Data Structures",
+					"working": "32",
+					"present": "25",
+					"avg": "78.7"
+				}, {
+					"subject_name": "Database Management Systems",
+					"working": "32",
+					"present": "21",
+					"avg": "65.5"
+				}, {
+					"subject_name": "Database Management Systems Lab",
+					"working": "32",
+					"present": "20",
+					"avg": "65.5"
+
+				}]
+			}]
+		}
+
+	}
+}

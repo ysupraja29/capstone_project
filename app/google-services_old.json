@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "491912470078",
+    "firebase_url": "https://nirf-aa309.firebaseio.com",
+    "project_id": "nirf-aa309",
+    "storage_bucket": "nirf-aa309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491912470078:android:0cf2506fb2930cc2",
+        "android_client_info": {
+          "package_name": "com.egnify.nirf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491912470078-2raqlc3qusnm8f1k7sfn6on2kfq9gl3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.egnify.nirf",
+            "certificate_hash": "87EB845FF7310A4F1F04221B609A2610BA128FDE"
+          }
+        },
+        {
+          "client_id": "491912470078-pdtn5gvm3d9i7bpn2buem5eg6uo8vbs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdT-zV-k-iq5_pB1V7QFTqpxGk07WyoCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491912470078-pdtn5gvm3d9i7bpn2buem5eg6uo8vbs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

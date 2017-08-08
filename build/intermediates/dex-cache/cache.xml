@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/95adeaccf85309d86b1a0d6f598c991fdb8f00a8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_a41621d6adb34797ffd494b9ea9d4675ebaf9b8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/73ce92adab41148785e399272d402fa9c937761d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_a2372a60e9f9adc029d38380deb8f7c70ed0a9fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.1/2780d858273ce1bb90f6b12e1ef0d40f7741fca/converter-gson-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02780d858273ce1bb90f6b12e1ef0d40f7741fca">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/converter-gson-2.0.1_90055e8b7b47f633ea8185405541a563dc57ac0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/gson-2.6.1_45c28785e0f83af2262b5402660a7d63d481152a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/glide-3.7.0_53ebe8867f96f6d7feff348a51cf2a4b2d1f5194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/7162b9768e33d986f7ae861af8b4bf195ebf2932/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_03a233707ae41374a0cae883a33ac4f0b7a29c45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/2777d6d5772337d3558ed5701385452848c0034e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_b5e9749fc9b60c878df68d5e48038bbfca8ba1c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/84e7ca4b89753e7e02d3d391925d846d2b22cad3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_7c81ac6869c8f9c76fc374a90491362c436a5f48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/98e585a514410cdfa6e90e65f7e271f80cf41b6c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_a654b0901f18eaed810b5057cb1b8f1b74d8bb8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/d802a0341f90a9570f8ca0e193bac53bc68446e6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_09de24bf2cf5314b55c9870bc45ac1cc0387827b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/da324687806fc1e2e565a2c135885be542d44489/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_4e4f02c004c8ba1d2bb8a3c3cb08b15ce9f2a0b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/9097a6b3fd456bc6d252db8111b201975111d3fe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_5ad2a2f15d731f61a6935de08d93a18804906d66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/eff460de0a5ddebb477983f388d9b7050621f482/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_190e7017f710bcc547758a943bdbf20af06a18fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.1/cabf146d220dcd70a2972166cd1bfae200b97eff/adapter-rxjava-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cabf146d220dcd70a2972166cd1bfae200b97eff">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.0.1_014cac7bedf52991df4e2e611445ced1e7816d93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_9a39667e50de93c1df565d549a572e2ab9efbda2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/cda24cd251b94875b872bad815fc16dd46b5013c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_28a5ed8c2d683575c2d9ce0e79d0d56026ea0056.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/27e14ae6cf4c62cd4d217f65a1dbb5d056057bb7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_8fbc205c479af2052d447a12cb6e4686fce0e738.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/e076ae4185e64b8a14b26be43ef8791d5c269e17/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_c17ee3d1e0f70711dd01d58ba4138364578a9176.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/okio-1.6.0_b0594a13f9289a6509c173be9fc19032f2a31af4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/3b9f51a7326ca27bbaf94f8cf09234c4673cc7ce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_699f2eed24f04c68df12857b90221f5fea939989.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.1/27293c440d2085cde1d859528aff6e7d3b6ae40/retrofit-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="027293c440d2085cde1d859528aff6e7d3b6ae40">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/retrofit-2.0.1_79b8056a04d07fca900a23bb88e64f108ac1d364.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_b81b155ee684b3f919ef868b73097f6d39a8a4aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/045ea3845aaf91db162b0835dfc15079974ce541/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_ecf649e6dcba0ab77afc3b569f188459f626b664.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_eae7ff8c7e77ef040f543b130e33554868ab9210.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/56f750232a8c38a90b2795387eaa7511cac37db0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_867abc33c2fbe9cfc97979d7fc566d0d17433665.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/f42d901d4fd76397bfeccc2adde68f9ff61556e2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_8c1509a48bb3c6c58c1db465b800b6e65aeed590.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/e634c5ab6a1956cfefb7b788a9e0c1e93eb97f82/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_1dd68167868b188d07c9ca1f202cf5272373e065.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_7913b0f673c0754a95e1e823c1776c7ddef25c24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/d8bff6119d957b50475fc80f080c7a81468c3e76/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_aaaa2f4931819d3fd403d84b5cb180f055568ad3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/53b93f45cd20e448b9e578b86b7f189ebae62375/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_e510c1d34b2ebc5af50b7f60a47290807503ce18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.0/ff93baa2e2e6ca507fc6ec731f61751dd0d865e7/MPAndroidChart-v3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ff93baa2e2e6ca507fc6ec731f61751dd0d865e7">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v3.0.0_7890d706c8f5adb1a1f1d3d9a9428247b28ec6b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.android/build-cache/99125e13644d26e089a2fdd576d4e0bea9b945a4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/classes_b4fb5d9cf69b2ecd98eba9173984f4149fda0d1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/janardhanyerranagu/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.8/f9dbae366a6a3d6b5041c5e8db0dcdfdc35c27b5/rxjava-1.1.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f9dbae366a6a3d6b5041c5e8db0dcdfdc35c27b5">
+        <dex dex="/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/pre-dexed/debug/rxjava-1.1.8_e0bdedae1cae129783016f057c55f92bca784178.jar" />
+    </item>
+
+</items>

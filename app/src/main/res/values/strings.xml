@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Nirf</string>
+    <string name="title_activity_google_login">GoogleLogin</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="nirf_main_heading">National Institutional Ranking Framework</string>
+
+    <string name="signed_out">Signed Out</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="desc_nirf_mainlogo">Main Logo og NIRF</string>
+    <string name="nirf_sub_heading">Ministry of Human Resource Development</string>
+    <string name="nirf_sub_heading2">Government of India</string>
+    <string name="university">University</string>
+    <string name="engg">Engineering</string>
+    <string name="managment">Managment</string>
+    <string name="pharm">Pharmacy</string>
+    <string name="title_activity_main">NIRF</string>
+    <string name="title_activity_engg">EnggActivity</string>
+    <string name="no_data_available">No Students Assinged</string>
+    <string name="noconnection">No Internet Connect</string>
+    <string name="title_activity_college_details">CollegeDetailsActivity</string>
+    <string name="widget_nodata">Still You have not added favorites.</string>
+    <string name="favorite_colleges">Favorite Colleges</string>
+    <string name="empty_widget">Still you didn\'t marked favorite</string>
+    <string name="demo_text">demo_text</string>
+    <string name="all">All</string>
+    <string name="tlr">TLR</string>
+    <string name="rpc">RPC</string>
+    <string name="go">GO</string>
+    <string name="oi">OI</string>
+    <string name="per">Per</string>
+    <string name="score">Score</string>
+    <string name="rank">Rank</string>
+    <string name="retry">Retry</string>
+
+</resources>

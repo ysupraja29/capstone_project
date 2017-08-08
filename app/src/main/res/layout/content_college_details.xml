@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_college_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.egnify.nirf.CollegeDetailsActivity"
+    tools:showIn="@layout/activity_college_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/row_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen8">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen8"
+                        android:layout_toRightOf="@+id/logo">
+
+                        <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                            android:id="@+id/college_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="demo_text"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="9sp" />
+
+                        <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/college_id"
+                            android:text="demo_tex"
+                            android:textColor="@color/primary_text"
+                            android:textSize="14sp" />
+
+                        <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name"
+                            android:text="demo_text"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="9sp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/row_one"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider" />
+
+            <!--<com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/metric_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_"
+                android:gravity="center"
+                android:padding="@dimen/dimen8"
+                android:text="Teaching and Learning"
+                android:textSize="21dp" />-->
+
+
+            <LinearLayout
+                android:id="@+id/anal_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen8"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:weightSum="3.004">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_bold
+                        android:id="@+id/all_india"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen8"
+                        android:paddingRight="@dimen/dimen8"
+                        android:text="-"
+                        android:textColor="@color/c1"
+                        android:textSize="32sp" />
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimen8"
+                        android:text="All India Rank"
+                        android:textColor="@color/primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0px"
+
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.002"
+                    android:background="@color/tabsScrollColor" />
+
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_bold
+                        android:id="@+id/state_rank"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen8"
+                        android:paddingRight="@dimen/dimen8"
+                        android:text="-"
+                        android:textColor="@color/a2"
+
+                        android:textSize="32sp" />
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimen8"
+                        android:text="State Rank"
+                        android:textColor="@color/primary_text"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0px"
+
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.002"
+                    android:background="@color/tabsScrollColor" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_bold
+                        android:id="@+id/overall_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen8"
+                        android:paddingRight="@dimen/dimen8"
+                        android:text="-"
+                        android:textColor="@color/d1"
+                        android:textSize="32sp" />
+
+                    <com.egnify.nirf.utils.p_MyCustomTextView_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimen8"
+                        android:text="Overall Score"
+                        android:textColor="@color/primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/anal_layer"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider" />
+
+            <com.github.mikephil.charting.charts.BarChart xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/line_2"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/values_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/barchart"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E0E0E0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:weightSum="7">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Sub Metric"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/percentage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Score"
+                                android:textColor="#000000" />
+
+                            <!-- <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:text=" # "
+                                 android:textColor="#000000" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/legends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chart"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#071E2C"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/all_iv"
+
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/rpc" />
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/all_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tlr"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tlr_iv"
+
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tlr" />
+
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/tlr_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tlr"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rpc"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rpc_iv"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/rpc" />
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/rpc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rpc"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/go"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/go_iv"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/go" />
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/go_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/go"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/oi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/oi_iv"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/oi" />
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/oi_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/oi"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/per"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/per_iv"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/per" />
+
+            <com.egnify.nirf.utils.p_MyCustomTextView_mbold
+                android:id="@+id/per_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/per"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

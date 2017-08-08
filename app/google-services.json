@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1051211223409",
+    "firebase_url": "https://nirf-56e7a.firebaseio.com",
+    "project_id": "nirf-56e7a",
+    "storage_bucket": "nirf-56e7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051211223409:android:0cf2506fb2930cc2",
+        "android_client_info": {
+          "package_name": "com.egnify.nirf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051211223409-2dsh48qgl9l2o7a5jharovf7hgib20j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmbNpq3EmZKI7QCZWXna6cS_d-V6k_KnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
