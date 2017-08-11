@@ -1,0 +1,380 @@
+{
+  "error": "false",
+  "Couselling_details": {
+    "overall_given": "79",
+    "overall_notgiven": "21",
+    "overall_absent": "34",
+    "week_response": {
+      "error": "false",
+      "week_details": [
+        {
+          "weekname": "Week(Jun 2 - Jun 8)",
+          "present_count": "2345",
+          "absent_count": "987",
+          "not_given": "1243",
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "present_count": "335",
+              "absent_count": "141",
+              "not_given": "83"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "present_count": "225",
+              "absent_count": "123",
+              "not_given": "78"
+            },
+            {
+              "deptname": "CIVIL",
+              "present_count": "259",
+              "absent_count": "201",
+              "not_given": "100"
+            },
+            {
+              "deptname": "CSE",
+              "present_count": "267",
+              "absent_count": "209",
+              "not_given": "106"
+            },
+            {
+              "deptname": "ECE",
+              "present_count": "312",
+              "absent_count": "214",
+              "not_given": "122"
+            },
+            {
+              "deptname": "EEE",
+              "present_count": "299",
+              "absent_count": "255",
+              "not_given": "87"
+            },
+            {
+              "deptname": "MBA",
+              "present_count": "213",
+              "absent_count": "222",
+              "not_given": "78"
+            },
+            {
+              "deptname": "MECH",
+              "present_count": "219",
+              "absent_count": "108",
+              "not_given": "74"
+            }
+          ]
+        },
+        {
+          "weekname": "Week(Jun 2 - Jun 8)",
+          "present_count": "2345",
+          "absent_count": "987",
+          "not_given": "1243",
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "present_count": "335",
+              "absent_count": "141",
+              "not_given": "83"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "present_count": "225",
+              "absent_count": "123",
+              "not_given": "78"
+            },
+            {
+              "deptname": "CIVIL",
+              "present_count": "259",
+              "absent_count": "201",
+              "not_given": "100"
+            },
+            {
+              "deptname": "CSE",
+              "present_count": "267",
+              "absent_count": "209",
+              "not_given": "106"
+            },
+            {
+              "deptname": "ECE",
+              "present_count": "312",
+              "absent_count": "214",
+              "not_given": "122"
+            },
+            {
+              "deptname": "EEE",
+              "present_count": "299",
+              "absent_count": "255",
+              "not_given": "87"
+            },
+            {
+              "deptname": "MBA",
+              "present_count": "213",
+              "absent_count": "222",
+              "not_given": "78"
+            },
+            {
+              "deptname": "MECH",
+              "present_count": "219",
+              "absent_count": "108",
+              "not_given": "74"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "question_details": [
+    {
+      "question": "Do you think there is a scope for improvement in Student’s",
+      "yes_percentage": "78",
+      "no_percentage": "22",
+      "overall_yes_sublist_reponse": {
+        "has_list": "true",
+        "yes_sublist_details": [
+          {
+            "sub_question": "Home Assignments",
+            "sub_question_percentage": "30"
+          },
+          {
+            "sub_question": "Attend Extra Classes",
+            "sub_question_percentage": "30"
+          }
+        ]
+      },
+      "weekly_question_details": [
+        {
+          "weekname": "Week(jun 2 -jun 8)",
+          "question_yes": "20",
+          "question_no": "30",
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CIVIL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CSE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "ECE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "EEE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MBA",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MECH",
+              "question_yes": "20",
+              "question_no": "30"
+            }
+          ],
+          "yes_sublist_reponse": {
+            "has_list": "true",
+            "yes_sublist_details": [
+              {
+                "sub_question": "Home Assignments",
+                "sub_question_percentage": "30"
+              },
+              {
+                "sub_question": "Attend Extra Classes",
+                "sub_question_percentage": "30"
+              }
+            ]
+          }
+        },
+        {
+          "weekname": "Week(jun 2 -jun 8)",
+          "question_yes": "20",
+          "question_no": "30",
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CIVIL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CSE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "ECE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "EEE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MBA",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MECH",
+              "question_yes": "20",
+              "question_no": "30"
+            }
+          ],
+          "yes_sublist_reponse": {
+            "has_list": "true",
+            "yes_sublist_details": [
+              {
+                "sub_question": "Home Assignments",
+                "sub_question_percentage": "30"
+              },
+              {
+                "sub_question": "Attend Extra Classes",
+                "sub_question_percentage": "30"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question": "Any issues with Student’s Discipline?",
+      "yes_percentage": "78",
+      "no_percentage": "22",
+      "overall_yes_sublist_reponse": {
+        "has_list": "false",
+        "message": "no sub questions for this response"
+      },
+      "weekly_question_details": [
+        {
+          "weekname": "week(jun 2 -jun 8)",
+          "question_yes": "20",
+          "question_no": "30",
+          "yes_sublist_reponse": {
+            "has_list": "false",
+            "message": "no sub questions for this response"
+          },
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CIVIL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CSE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "ECE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "EEE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MBA",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MECH",
+              "question_yes": "20",
+              "question_no": "30"
+            }
+          ]
+        },
+        {
+          "weekname": "week(jun 2 -jun 8)",
+          "question_yes": "20",
+          "question_no": "30",
+          "yes_sublist_reponse": {
+            "has_list": "false",
+            "message": "no sub questions for this response"
+          },
+          "department_details": [
+            {
+              "deptname": "BIOTECH",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CHEMICAL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CIVIL",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "CSE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "ECE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "EEE",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MBA",
+              "question_yes": "20",
+              "question_no": "30"
+            },
+            {
+              "deptname": "MECH",
+              "question_yes": "20",
+              "question_no": "30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

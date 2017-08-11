@@ -1,7 +1,10 @@
 package com.egnify.nirf;
 
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -26,7 +29,9 @@ import com.egnify.nirf.MainScreen.PerceptionPojo;
 import com.egnify.nirf.MainScreen.RpcPojo;
 import com.egnify.nirf.MainScreen.SubMetricPojo;
 import com.egnify.nirf.MainScreen.TlrPojo;
+import com.egnify.nirf.Provider.FavsDataSource;
 import com.egnify.nirf.Provider.MySQLiteHelper;
+import com.egnify.nirf.Widget.CollectionWidget;
 import com.egnify.nirf.favorites.FavsContentProvider;
 import com.egnify.nirf.utils.AppUrl;
 import com.egnify.nirf.utils.MyCustomTextViewBold;
@@ -61,10 +66,9 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
     MyCustomTextViewBold all_india, state_rank, overall_score;
     //  p_MyCustomTextView_mbold metric_heading;
     int i = 0;
-    String[] Main_headings = {"OverAll", "Teaching, Learning & Resources", "Research and Professional Practice", "Graduation Outcomes", "Outreach and Inclusivity", "Perception"};
     private CollegePojo clg_pojo;
     private Uri todoUri;
-    // private FavsDataSource datasource;
+    private FavsDataSource datasource;
 
     public static float round(float d, int decimalPlace) {
         BigDecimal bd = new BigDecimal(Float.toString(d));
@@ -78,13 +82,13 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         setContentView(R.layout.activity_college_details);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("OverAll");
+        getSupportActionBar().setTitle(R.string.overall_score);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        clg_pojo = (CollegePojo) getIntent().getSerializableExtra("CollegePojo");
+        clg_pojo = (CollegePojo) getIntent().getSerializableExtra(getString(R.string.clg_pojo));
         MyCustomTextViewMbold name = (MyCustomTextViewMbold) findViewById(R.id.name);
         MyCustomTextViewMbold college_id = (MyCustomTextViewMbold) findViewById(R.id.college_id);
         MyCustomTextViewMbold location = (MyCustomTextViewMbold) findViewById(R.id.location);
-        //  datasource = new FavsDataSource(this);
+        datasource = new FavsDataSource(this);
         ImageView logo = (ImageView) findViewById(R.id.logo);
         name.setText(clg_pojo.getInstitute_name());
         college_id.setText(clg_pojo.getCollege_id());
@@ -469,22 +473,22 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         int color = Color.parseColor("#FFFFFF");
         if (i == 0) {
             color = Color.parseColor("#FFFFFF");
-            toolbar.setTitle(Main_headings[0]);
+            toolbar.setTitle(R.string.overall_score);
         } else if (i == 1) {
             color = Color.parseColor("#3B88E4");
-            toolbar.setTitle(Main_headings[1]);
+            toolbar.setTitle(R.string.tlr);
         } else if (i == 2) {
             color = Color.parseColor("#FFC300");
-            toolbar.setTitle(Main_headings[2]);
+            toolbar.setTitle(R.string.rpc);
         } else if (i == 3) {
             color = Color.parseColor("#2BDEC5");
-            toolbar.setTitle(Main_headings[3]);
+            toolbar.setTitle(R.string.go);
         } else if (i == 4) {
             color = Color.parseColor("#FB406F");
-            toolbar.setTitle(Main_headings[4]);
+            toolbar.setTitle(R.string.oi);
         } else if (i == 5) {
             color = Color.parseColor("#785446");
-            toolbar.setTitle(Main_headings[5]);
+            toolbar.setTitle(R.string.per);
         }
         toolbar.setBackgroundColor(color);
         //The color u want
@@ -690,17 +694,18 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             boolean isFav = getfav();
 
             if (!isFav) {
-
+                datasource.createComment(clg_pojo);
                 createComment(clg_pojo);
                 drawable = getDrawable(R.drawable.heart);//R.drawable.heart_outline;
 
 
             } else {
+                datasource.deleteComment(clg_pojo);
 
                 deleteComment(clg_pojo);
                 drawable = getDrawable(R.drawable.heart_outline);//R.drawable.heart_outline;
             }
-            // update_widget();
+            update_widget();
 
 
             runOnUiThread(new Runnable() {
@@ -718,4 +723,11 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
 
     }
 
+    private void update_widget() {
+        Intent intent = new Intent(this, CollectionWidget.class);
+        intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+        int ids[] = AppWidgetManager.getInstance(getApplication()).getAppWidgetIds(new ComponentName(getApplication(), CollectionWidget.class));
+        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+        sendBroadcast(intent);
+    }
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/heart_outline.xml",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/debug/drawable-anydpi-v21/heart_outline.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/logout.xml",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/debug/drawable-anydpi-v21/logout.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/menu_up.xml",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/debug/drawable-anydpi-v21/menu_up.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/heart.xml",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/debug/drawable-anydpi-v21/heart.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/menu_down.xml",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/debug/drawable-anydpi-v21/menu_down.xml"
+    }
+]

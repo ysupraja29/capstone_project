@@ -43,7 +43,6 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     boolean isloading = true;
     Toolbar toolbar;
     boolean ascending = true;
-    String[] Main_headings = {"OverAll", "Teaching, Learning & Resources", "Research and Professional Practice", "Graduation Outcomes", "Outreach and Inclusivity", "Perception"};
     MyCustomTextViewBold score, rank;
     List<CommonCollegePojo> sort_filter_array = new ArrayList<>();
     List<CollegePojo> sort_coun_students = new ArrayList<>();
@@ -232,31 +231,31 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     private void settoblack(ImageView imageView, MyCustomTextViewMbold metric, int i) {
         int color = Color.parseColor("#F44336");
         int color2 = R.color.colorPrimaryDark;
-        String metric_n = Main_headings[0];
+        String metric_n = getString(R.string.overall_score);
         if (i == 0) {
             color = Color.parseColor("#F44336");
             color2 = R.color.colorPrimaryDark;
-            metric_n = Main_headings[0];
+            metric_n =getString(R.string.overall_score) ;
         } else if (i == 1) {
             color = Color.parseColor("#3B88E4");
             color2 = R.color.colorTlrDark;
-            metric_n = Main_headings[1];
+            metric_n = getString(R.string.tlr) ;
         } else if (i == 2) {
             color = Color.parseColor("#2BDEC5");
             color2 = R.color.colorRpcDark;
-            metric_n = Main_headings[2];
+            metric_n =getString(R.string.rpc) ;
         } else if (i == 3) {
             color = Color.parseColor("#FDD835");
             color2 = R.color.colorGoDark;
-            metric_n = Main_headings[3];
+            metric_n =getString(R.string.go) ;
         } else if (i == 4) {
             color = Color.parseColor("#FB406F");
             color2 = R.color.colorOiDark;
-            metric_n = Main_headings[4];
+            metric_n = getString(R.string.oi) ;
         } else if (i == 5) {
             color = Color.parseColor("#785446");
             color2 = R.color.colorPerDark;
-            metric_n = Main_headings[5];
+            metric_n = getString(R.string.per);
         }
         heading.setBackgroundColor(color);
         toolbar.setBackgroundColor(color);
@@ -305,9 +304,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onFailure(Call<CollegeResponse> call, Throwable t) {
                 // Log error here since request failed
-                Log.e("zones_activity", t.toString());
                 if (t instanceof UnknownHostException) {
-                    Log.e("error", "not internet connect");
                     //Add your code for displaying no network connection error
                     progressBar.setVisibility(View.GONE);
                     emptyView.setVisibility(View.GONE);

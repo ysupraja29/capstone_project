@@ -55,5 +55,12 @@
     <string name="play_error">Google Play Services error.</string>
     <string name="title_activity_favs">FavsActivity</string>
     <string name="nouser">No User Found.PLease Login</string>
+    <string name="tlr_"><![CDATA[Teaching, Learning & Resources]]></string>
+    <string name="rpp">Research and Professional Practice</string>
+    <string name="til">TLR</string>
+    <string name="unknown_uri">Unknown URI:</string>
+    <string name="clg_pojo">CollegePojo</string>
+    <string name="s">f</string>
+    <string name="ov">OverAll</string>
 
 </resources>

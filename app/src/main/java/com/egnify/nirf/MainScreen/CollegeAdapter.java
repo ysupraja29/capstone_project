@@ -63,7 +63,7 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.CustomVi
                 if (position >= 0) {
                     Uri todoUri = Uri.parse(FavsContentProvider.CONTENT_URI + "/" + lCounStudents.get(position).getId());
                     Intent intent = new Intent(mContext, CollegeDetailsActivity.class);
-                    intent.putExtra("CollegePojo", lCounStudents.get(position));
+                    intent.putExtra(mContext.getString(R.string.clg_pojo), lCounStudents.get(position));
                     intent.putExtra(FavsContentProvider.CONTENT_ITEM_TYPE, todoUri);
 
                     mContext.startActivity(intent);

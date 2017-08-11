@@ -63,14 +63,25 @@
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/collection_widget_info" />
+                android:resource="@xml/fav_widget" />
         </receiver>
 
         <!--
              2. The service that will send our collection data to our widget. It needs the
                 permission android.permission.BIND_REMOTEVIEWS
         -->
+        <receiver android:name=".Widget.CollectionWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/collection_widget_info" />
+        </receiver>
+        <service
+            android:name=".Widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
         <provider
             android:name=".favorites.FavsContentProvider"
             android:authorities="com.egnify.nirf.contentprovider"></provider>

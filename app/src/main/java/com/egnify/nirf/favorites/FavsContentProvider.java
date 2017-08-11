@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.egnify.nirf.Provider.MySQLiteHelper;
+import com.egnify.nirf.R;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -112,10 +113,9 @@ public class FavsContentProvider extends ContentProvider {
         switch (uriType) {
             case TODOS:
                 id = sqlDB.insert(TABLE_COLLEGEINFO, null, values);
-                Log.d("inserted", "true");
                 break;
             default:
-                throw new IllegalArgumentException("Unknown URI: " + uri);
+                throw new IllegalArgumentException("Unknown uri:"+ uri);
         }
         getContext().getContentResolver().notifyChange(uri, null);
         return Uri.parse(BASE_PATH + "/" + id);

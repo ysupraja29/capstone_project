@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'nirf'
             keyPassword 'supraja'
-            storeFile file('app/nirf.jks')
+            storeFile file('nirf.jks')
             storePassword 'supraja'
         }
     }

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/heart_outline.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xhdpi/heart_outline.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/heart.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xhdpi/heart.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/menu_down.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xhdpi/menu_down.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/firebase_lockup_400.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/drawable-xhdpi/firebase_lockup_400.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/logout.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xhdpi/logout.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/ic_person_white.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/drawable-xhdpi/ic_person_white.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xhdpi/menu_up.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xhdpi/menu_up.png"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/f42d901d4fd76397bfeccc2adde68f9ff61556e2/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/f42d901d4fd76397bfeccc2adde68f9ff61556e2/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/f42d901d4fd76397bfeccc2adde68f9ff61556e2/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

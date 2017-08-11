@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/color-v23/abc_tint_default.xml"
+    }
+]
