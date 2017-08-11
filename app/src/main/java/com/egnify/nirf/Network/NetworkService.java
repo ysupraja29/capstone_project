@@ -6,7 +6,6 @@ import android.support.v4.util.LruCache;
 import com.egnify.nirf.Pojos.CollegeInfo;
 
 import java.io.IOException;
-import java.util.Map;
 
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -16,7 +15,6 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
-import retrofit2.http.QueryMap;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -25,7 +23,7 @@ import rx.schedulers.Schedulers;
  * Created by cteegarden on 1/25/16.
  */
 
-public class NetworkService{
+public class NetworkService {
     private static String baseUrl = "http://egnify.com/nirf/";
 
 
@@ -34,11 +32,11 @@ public class NetworkService{
     private LruCache<Class<?>, Observable<?>> apiObservables;
 
     public NetworkService() {
-            this(baseUrl);
+        this(baseUrl);
 
     }
 
-    public NetworkService(String baseUrl){
+    public NetworkService(String baseUrl) {
         okHttpClient = buildClient();
         apiObservables = new LruCache<>(10);
         Retrofit retrofit = new Retrofit.Builder()
@@ -53,19 +51,21 @@ public class NetworkService{
 
     /**
      * Method to return the API interface.
+     *
      * @return
      */
-    public NetworkAPI getAPI(){
-        return  networkAPI;
+    public NetworkAPI getAPI() {
+        return networkAPI;
     }
 
 
     /**
      * Method to build and return an OkHttpClient so we can set/get
      * headers quickly and efficiently.
+     *
      * @return
      */
-    public OkHttpClient buildClient(){
+    public OkHttpClient buildClient() {
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
 
@@ -88,13 +88,13 @@ public class NetworkService{
             }
         });
 
-        return  builder.build();
+        return builder.build();
     }
 
     /**
      * Method to clear the entire cache of observables
      */
-    public void clearCache(){
+    public void clearCache() {
         apiObservables.evictAll();
     }
 
@@ -108,16 +108,15 @@ public class NetworkService{
      * @param useCache
      * @return Observable ready to be subscribed to
      */
-    public Observable<?> getPreparedObservable(Observable<?> unPreparedObservable, Class<?> clazz, boolean cacheObservable, boolean useCache){
+    public Observable<?> getPreparedObservable(Observable<?> unPreparedObservable, Class<?> clazz, boolean cacheObservable, boolean useCache) {
 
         Observable<?> preparedObservable = null;
 
-        if(useCache)//this way we don't reset anything in the cache if this is the only instance of us not wanting to use it.
+        if (useCache)//this way we don't reset anything in the cache if this is the only instance of us not wanting to use it.
             preparedObservable = apiObservables.get(clazz);
 
-        if(preparedObservable!=null)
+        if (preparedObservable != null)
             return preparedObservable;
-
 
 
         //we are here because we have never created this observable before or we didn't want to use the cache...
@@ -125,7 +124,7 @@ public class NetworkService{
         preparedObservable = unPreparedObservable.subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread());
 
-        if(cacheObservable){
+        if (cacheObservable) {
             preparedObservable = preparedObservable.cache();
             apiObservables.put(clazz, preparedObservable);
         }
@@ -143,12 +142,11 @@ public class NetworkService{
 
         @GET("api/get_colleges")
         Observable<CollegeInfo> getAdherenceVCWeekWise();
-       // @GET("reports/api-adherence-dept")
-      //  Observable<AdherenceDepartmentResponse> getAdherenceVCWeekWiseDeptWise(@QueryMap Map<String, String> params);
+        // @GET("reports/api-adherence-dept")
+        //  Observable<AdherenceDepartmentResponse> getAdherenceVCWeekWiseDeptWise(@QueryMap Map<String, String> params);
 
 
     }
-
 
 
 }

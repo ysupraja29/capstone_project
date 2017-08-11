@@ -1,10 +1,6 @@
 [
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
-    }
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+  }
 ]

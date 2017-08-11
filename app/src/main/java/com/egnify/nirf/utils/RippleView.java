@@ -76,6 +76,7 @@ public class RippleView extends View {
 
     /**
      * Called to create different type of ripples
+     *
      * @param rippleType : Paint.Style.FILL , Paint.Style.FILL, Paint.Style.FILL_AND_STROKE
      */
     public void setRippleType(Paint.Style rippleType) {
@@ -84,6 +85,7 @@ public class RippleView extends View {
 
     /**
      * Called to get ripple speed
+     *
      * @return : ripple speed
      */
     public int getRippleVelocity() {
@@ -92,6 +94,7 @@ public class RippleView extends View {
 
     /**
      * Set ripple speed
+     *
      * @param rippleVelocity
      */
     public void setRippleVelocity(int rippleVelocity) {
@@ -129,14 +132,14 @@ public class RippleView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        Log.d(TAG, "WIDTH = " + widthMeasureSpec +" HEIGHT = " + heightMeasureSpec);
+        Log.d(TAG, "WIDTH = " + widthMeasureSpec + " HEIGHT = " + heightMeasureSpec);
     }
 
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        Log.d(TAG, "ON SIZE CHANGED WIDTH = " + w +" HEIGHT = " + h);
+        Log.d(TAG, "ON SIZE CHANGED WIDTH = " + w + " HEIGHT = " + h);
 
 
     }
@@ -165,9 +168,9 @@ public class RippleView extends View {
         radius += rippleVelocity; // increase value to make fast ripple effect
 
 
-        if(!(radius > maxRadius)){
+        if (!(radius > maxRadius)) {
             invalidate();
-        }else{
+        } else {
             destroyDrawingCache();
             Log.d(TAG, "Ripple Effect end");
         }
@@ -176,28 +179,29 @@ public class RippleView extends View {
 
     /**
      * Call to start ripple effect
-     * @param v    : Clicked view
+     *
+     * @param v     : Clicked view
      * @param group : Parent of clicked view
      */
-    public void initRipple(View v, final ViewGroup group){
+    public void initRipple(View v, final ViewGroup group) {
 
 
         float x = v.getX() - group.getPaddingLeft();
         float y = v.getY() - group.getPaddingTop();
-        Log.d(TAG , "X = " + x);
+        Log.d(TAG, "X = " + x);
         int width = v.getWidth();
         int height = v.getHeight();
         final RelativeLayout layout = new RelativeLayout(mContext);
         layout.setX(x);
         layout.setY(y);
-        Log.d(TAG,"LAYOUT X=" +layout.getX());
+        Log.d(TAG, "LAYOUT X=" + layout.getX());
         RelativeLayout.LayoutParams param = new RelativeLayout.LayoutParams(width, height);
 //        layout.setBackgroundColor(Color.RED);
         layout.setLayoutParams(param);
 
 
         originalChildCount = group.getChildCount();
-        if(initialChildCount == -1 && !isLayoutCreated){
+        if (initialChildCount == -1 && !isLayoutCreated) {
             initialChildCount = originalChildCount;
             isLayoutCreated = true;
         }
@@ -238,10 +242,10 @@ public class RippleView extends View {
                 Log.d(TAG, "Child Count " + group.getChildCount());
 
 
-                for(int i = 0; i < group.getChildCount(); i++){
+                for (int i = 0; i < group.getChildCount(); i++) {
                     try {
                         group.removeViewAt(i);
-                        Log.d(TAG, "LAYOUT CHILD COUNT" + group.getChildCount()) ;
+                        Log.d(TAG, "LAYOUT CHILD COUNT" + group.getChildCount());
 
 
                         RippleView.getRippleArray().remove((RippleView.getRippleArray().size() - 1));
@@ -250,16 +254,18 @@ public class RippleView extends View {
                             Log.d(TAG, "Current Child " + parentGroup.getChildCount());
 
 
-                            for(int j=initialChildCount; j < parentGroup.getChildCount(); j++){
+                            for (int j = initialChildCount; j < parentGroup.getChildCount(); j++) {
                                 parentGroup.removeView(group);
-                                if(j == parentGroup.getChildCount() - 1) {
+                                if (j == parentGroup.getChildCount() - 1) {
                                     isLayoutCreated = false;
                                 }
 
 
                             }
                         }
-                    }catch (Exception x){x.printStackTrace();}
+                    } catch (Exception x) {
+                        x.printStackTrace();
+                    }
                 }
             }
         }, RIPPLE_DURATION);

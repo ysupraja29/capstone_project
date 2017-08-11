@@ -2,7 +2,6 @@ package com.egnify.nirf.MainScreen;
 
 import android.annotation.TargetApi;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -23,9 +22,9 @@ import android.widget.TextView;
 import com.egnify.nirf.R;
 import com.egnify.nirf.Rest.ApiClient;
 import com.egnify.nirf.Rest.ApiInterface;
-import com.egnify.nirf.utils.app_url;
-import com.egnify.nirf.utils.p_MyCustomTextView_bold;
-import com.egnify.nirf.utils.p_MyCustomTextView_mbold;
+import com.egnify.nirf.utils.AppUrl;
+import com.egnify.nirf.utils.MyCustomTextViewBold;
+import com.egnify.nirf.utils.MyCustomTextViewMbold;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
@@ -36,28 +35,26 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static java.security.AccessController.getContext;
-
 public class EnggActivity extends AppCompatActivity implements View.OnClickListener {
-//demo
+    LinearLayout all, tlr, rpc, go, oi, per;
+    ImageView all_iv, tlr_iv, rpc_iv, go_iv, oi_iv, per_iv;
+    MyCustomTextViewMbold all_tv, tlr_tv, rpc_tv, go_tv, oi_tv, per_tv;
+    LinearLayout heading;
+    boolean isloading = true;
+    Toolbar toolbar;
+    boolean ascending = true;
+    String[] Main_headings = {"OverAll", "Teaching, Learning & Resources", "Research and Professional Practice", "Graduation Outcomes", "Outreach and Inclusivity", "Perception"};
+    MyCustomTextViewBold score, rank;
+    List<CommonCollegePojo> sort_filter_array = new ArrayList<>();
+    List<CollegePojo> sort_coun_students = new ArrayList<>();
+    //demo
     private ProgressBar progressBar;
     private RecyclerView rv_coun_students;
     private TextView emptyView;
     private LinearLayout retry_ll;
     private ApiInterface apiService2;
-    private Call<college_response> call2;
-    private List<college_pojo> coun_students;
-    LinearLayout all, tlr, rpc, go, oi, per;
-    ImageView all_iv, tlr_iv, rpc_iv, go_iv, oi_iv, per_iv;
-    p_MyCustomTextView_mbold all_tv, tlr_tv, rpc_tv, go_tv, oi_tv, per_tv;
-    LinearLayout heading;
-    boolean isloading = true;
-    Toolbar toolbar;
-    boolean ascending=true;
-    String[] Main_headings = {"OverAll", "Teaching, Learning & Resources", "Research and Professional Practice", "Graduation Outcomes", "Outreach and Inclusivity", "Perception"};
-    p_MyCustomTextView_bold score, rank;
-    List<common_college_pojo> sort_filter_array = new ArrayList<>();
-    List<college_pojo> sort_coun_students = new ArrayList<>();
+    private Call<CollegeResponse> call2;
+    private List<CollegePojo> coun_students;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +70,8 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         retry_ll = (LinearLayout) findViewById(R.id.retry_ll);
         Button retry = (Button) findViewById(R.id.retry);
 
-        score = (p_MyCustomTextView_bold) findViewById(R.id.score);
-        rank = (p_MyCustomTextView_bold) findViewById(R.id.rank);
+        score = (MyCustomTextViewBold) findViewById(R.id.score);
+        rank = (MyCustomTextViewBold) findViewById(R.id.rank);
 
 
         all = (LinearLayout) findViewById(R.id.all);
@@ -91,18 +88,18 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         oi_iv = (ImageView) findViewById(R.id.oi_iv);
         per_iv = (ImageView) findViewById(R.id.per_iv);
 
-        all_tv = (p_MyCustomTextView_mbold) findViewById(R.id.all_tv);
-        tlr_tv = (p_MyCustomTextView_mbold) findViewById(R.id.tlr_tv);
-        rpc_tv = (p_MyCustomTextView_mbold) findViewById(R.id.rpc_tv);
-        go_tv = (p_MyCustomTextView_mbold) findViewById(R.id.go_tv);
-        oi_tv = (p_MyCustomTextView_mbold) findViewById(R.id.oi_tv);
-        per_tv = (p_MyCustomTextView_mbold) findViewById(R.id.per_tv);
+        all_tv = (MyCustomTextViewMbold) findViewById(R.id.all_tv);
+        tlr_tv = (MyCustomTextViewMbold) findViewById(R.id.tlr_tv);
+        rpc_tv = (MyCustomTextViewMbold) findViewById(R.id.rpc_tv);
+        go_tv = (MyCustomTextViewMbold) findViewById(R.id.go_tv);
+        oi_tv = (MyCustomTextViewMbold) findViewById(R.id.oi_tv);
+        per_tv = (MyCustomTextViewMbold) findViewById(R.id.per_tv);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         rv_coun_students.setLayoutManager(layoutManager);
         apiService2 = ApiClient.getClient2().create(ApiInterface.class);
 
-        String url = app_url.get_colleges;
+        String url = AppUrl.get_colleges;
         Log.d("Students_list", url);
         call2 = apiService2.get_colleges(url);
         network_call(call2);
@@ -126,8 +123,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (!isloading)
-        {
+        if (!isloading) {
 
             if (id == R.id.all) {
                 setAllAdapter(coun_students);
@@ -190,22 +186,19 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
                 settoblack(per_iv, per_tv, 5);
                 setPerAdapter(coun_students);
             }
-            if (id == R.id.score ||id == R.id.rank)
-            {
+            if (id == R.id.score || id == R.id.rank) {
 
-                if (ascending)
-                {
-                    ascending=false;
+                if (ascending) {
+                    ascending = false;
                     Collections.sort(sort_filter_array, Collections.reverseOrder());
-                    college_adapter adapter = new college_adapter(EnggActivity.this, sort_filter_array, sort_coun_students);
+                    CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, sort_filter_array, sort_coun_students);
                     rv_coun_students.setAdapter(adapter);
                     score.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.menu_down, 0);
                     rank.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.menu_down, 0);
-                }
-                else {
-                    ascending=true;
+                } else {
+                    ascending = true;
                     Collections.sort(sort_filter_array);
-                    college_adapter adapter = new college_adapter(EnggActivity.this, sort_filter_array, sort_coun_students);
+                    CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, sort_filter_array, sort_coun_students);
                     rv_coun_students.setAdapter(adapter);
                     score.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.menu_up, 0);
                     rank.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.menu_up, 0);
@@ -219,7 +212,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    private void settonormal(ImageView imageView, p_MyCustomTextView_mbold metric) {
+    private void settonormal(ImageView imageView, MyCustomTextViewMbold metric) {
         int color = Color.parseColor("#FFFFFF"); //The color u want
         imageView.setColorFilter(color);
         metric.setTextColor(getResources().getColor(R.color.white));
@@ -236,7 +229,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    private void settoblack(ImageView imageView, p_MyCustomTextView_mbold metric, int i) {
+    private void settoblack(ImageView imageView, MyCustomTextViewMbold metric, int i) {
         int color = Color.parseColor("#F44336");
         int color2 = R.color.colorPrimaryDark;
         String metric_n = Main_headings[0];
@@ -281,19 +274,19 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void network_call(Call<college_response> call) {
+    public void network_call(Call<CollegeResponse> call) {
         //top_bar.setVisibility(View.VISIBLE);
         // SlideToDown();
         enable_Load();
-        call.clone().enqueue(new Callback<college_response>() {
+        call.clone().enqueue(new Callback<CollegeResponse>() {
             @Override
-            public void onResponse(Call<college_response> call, Response<college_response> response) {
+            public void onResponse(Call<CollegeResponse> call, Response<CollegeResponse> response) {
 
                 if (response.body().getError().equals("false")) {
                     diable_Load();
                     coun_students = response.body().getCollege_details();
                     setAllAdapter(coun_students);
-                   // setAllAdapter(coun_students);
+                    // setAllAdapter(coun_students);
                     settoblack(all_iv, all_tv, 0);
                     settonormal(tlr_iv, tlr_tv);
                     settonormal(rpc_iv, rpc_tv);
@@ -310,7 +303,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
             }
 
             @Override
-            public void onFailure(Call<college_response> call, Throwable t) {
+            public void onFailure(Call<CollegeResponse> call, Throwable t) {
                 // Log error here since request failed
                 Log.e("zones_activity", t.toString());
                 if (t instanceof UnknownHostException) {
@@ -340,11 +333,11 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    private void setAllAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setAllAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
@@ -359,22 +352,22 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         }*/
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
         //  top_bar.setVisibility(View.GONE);
         // SlideToAbove();
     }
 
-    private void setTlrAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setTlrAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
             cmn_clg_pojo.setState(cmn_pojo.getState());
-            tlr_pojo tlr = cmn_pojo.getTlr();
+            TlrPojo tlr = cmn_pojo.getTlr();
             cmn_clg_pojo.setOverall_score(tlr.getTlr_score());
             cmn_clg_pojo.setRank(tlr.getTlr_rank());
             filter_array.add(cmn_clg_pojo);
@@ -388,20 +381,20 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         sort_coun_students = l_coun_students;
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
     }
 
-    private void setRPCAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setRPCAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
             cmn_clg_pojo.setState(cmn_pojo.getState());
-            rpc_pojo rpc = cmn_pojo.getRpc();
+            RpcPojo rpc = cmn_pojo.getRpc();
             cmn_clg_pojo.setOverall_score(rpc.getRpc_score());
             cmn_clg_pojo.setRank(rpc.getRpc_rank());
             filter_array.add(cmn_clg_pojo);
@@ -415,20 +408,20 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         sort_coun_students = l_coun_students;
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
     }
 
-    private void setGOAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setGOAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
             cmn_clg_pojo.setState(cmn_pojo.getState());
-            go_pojo go = cmn_pojo.getGo();
+            GoPojo go = cmn_pojo.getGo();
             cmn_clg_pojo.setOverall_score(go.getGo_score());
             cmn_clg_pojo.setRank(go.getGo_rank());
             filter_array.add(cmn_clg_pojo);
@@ -442,20 +435,20 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         sort_coun_students = l_coun_students;
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
     }
 
-    private void setOIAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setOIAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
             cmn_clg_pojo.setState(cmn_pojo.getState());
-            oi_pojo oi = cmn_pojo.getOi();
+            OiPojo oi = cmn_pojo.getOi();
             cmn_clg_pojo.setOverall_score(oi.getOi_score());
             cmn_clg_pojo.setRank(oi.getOi_rank());
             filter_array.add(cmn_clg_pojo);
@@ -469,20 +462,20 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         sort_coun_students = l_coun_students;
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
     }
 
-    private void setPerAdapter(List<college_pojo> l_coun_students) {
-        List<common_college_pojo> filter_array = new ArrayList<>();
+    private void setPerAdapter(List<CollegePojo> l_coun_students) {
+        List<CommonCollegePojo> filter_array = new ArrayList<>();
         for (int i = 0; i < l_coun_students.size(); i++) {
-            common_college_pojo cmn_clg_pojo = new common_college_pojo();
-            college_pojo cmn_pojo = l_coun_students.get(i);
+            CommonCollegePojo cmn_clg_pojo = new CommonCollegePojo();
+            CollegePojo cmn_pojo = l_coun_students.get(i);
             cmn_clg_pojo.setCollege_id(cmn_pojo.getCollege_id());
             cmn_clg_pojo.setInstitute_name(cmn_pojo.getInstitute_name());
             cmn_clg_pojo.setCity(cmn_pojo.getCity());
             cmn_clg_pojo.setState(cmn_pojo.getState());
-            perception_pojo perception = cmn_pojo.getPerception();
+            PerceptionPojo perception = cmn_pojo.getPerception();
             cmn_clg_pojo.setOverall_score(perception.getPerception_score());
             cmn_clg_pojo.setRank(perception.getPerception_rank());
             filter_array.add(cmn_clg_pojo);
@@ -496,7 +489,7 @@ public class EnggActivity extends AppCompatActivity implements View.OnClickListe
         sort_coun_students = l_coun_students;
         sort_filter_array = filter_array;
         sort_coun_students = l_coun_students;
-        college_adapter adapter = new college_adapter(EnggActivity.this, filter_array, l_coun_students);
+        CollegeAdapter adapter = new CollegeAdapter(EnggActivity.this, filter_array, l_coun_students);
         rv_coun_students.setAdapter(adapter);
     }
 }

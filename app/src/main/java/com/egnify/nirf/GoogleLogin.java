@@ -1,6 +1,7 @@
 package com.egnify.nirf;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.egnify.nirf.MainScreen.EnggActivity;
+import com.egnify.nirf.favorites.FavsActivity;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -42,6 +44,7 @@ public class GoogleLogin extends BaseActivity implements
 // [END declare_auth_listener]
 
     private GoogleApiClient mGoogleApiClient;
+    private ImageView profile;
 //private TextView mStatusTextView;
 //private TextView mDetailTextView;
 
@@ -69,8 +72,8 @@ public class GoogleLogin extends BaseActivity implements
         // Button listeners
         findViewById(R.id.sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_out_button).setOnClickListener(this);
-
-        //findViewById(R.id.sign_out_button).setOnClickListener(this);
+        profile = (ImageView) findViewById(R.id.profile);
+        findViewById(R.id.profile).setOnClickListener(this);
         //findViewById(R.id.disconnect_button).setOnClickListener(this);
 
         // [START config_signin]
@@ -96,6 +99,9 @@ public class GoogleLogin extends BaseActivity implements
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
+                    Uri photoUrl = user.getPhotoUrl();
+                    Glide.with(GoogleLogin.this).load(photoUrl).into(profile);
+
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                 } else {
@@ -170,8 +176,15 @@ public class GoogleLogin extends BaseActivity implements
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithCredential", task.getException());
-                            Toast.makeText(GoogleLogin.this, "Authentication failed.",
+                            Toast.makeText(GoogleLogin.this, R.string.authentication_failed,
                                     Toast.LENGTH_SHORT).show();
+                        } else {
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                            if (user != null) {
+                                Uri photoUrl = user.getPhotoUrl();
+                                Glide.with(GoogleLogin.this).load(photoUrl).into(profile);
+                            }
+
                         }
                         // [START_EXCLUDE]
                         hideProgressDialog();
@@ -191,11 +204,11 @@ public class GoogleLogin extends BaseActivity implements
 // [END signin]
 
     private void signOut() {
-        Log.d("signOut","1");
+        Log.d("signOut", "1");
 
         // Firebase sign out
         mAuth.signOut();
-        Log.d("signOut","2");
+        Log.d("signOut", "2");
 
         // Google sign out
         Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
@@ -203,7 +216,7 @@ public class GoogleLogin extends BaseActivity implements
                     @Override
                     public void onResult(@NonNull Status status) {
                         updateUI(null);
-                        Log.d("signOut","3");
+                        Log.d("signOut", "3");
 
                     }
                 });
@@ -245,22 +258,37 @@ public class GoogleLogin extends BaseActivity implements
         // An unresolvable error has occurred and Google APIs (including Sign-In) will not
         // be available.
         Log.d(TAG, "onConnectionFailed:" + connectionResult);
-        Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.play_error, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onClick(View v) {
-        Log.d("click_event","yes");
+        Log.d("click_event", "yes");
         int i = v.getId();
         if (i == R.id.sign_in_button) {
             signIn();
         } else if (i == R.id.sign_out_button) {
-            Log.d("click_event","sign_out_button");
+            Log.d("click_event", "sign_out_button");
 
             signOut();
         } else if (i == R.id.engg_iv) {
             Intent intent = new Intent(GoogleLogin.this, EnggActivity.class);
             startActivity(intent);
+        } else if (i == R.id.pharm_iv) {
+            Intent intent = new Intent(GoogleLogin.this, EnggActivity.class);
+            startActivity(intent);
+        } else if (i == R.id.manag_iv) {
+            Intent intent = new Intent(GoogleLogin.this, EnggActivity.class);
+            startActivity(intent);
+        } else if (i == R.id.uni_iv) {
+            Intent intent = new Intent(GoogleLogin.this, EnggActivity.class);
+            startActivity(intent);
+        } else if (i == R.id.profile) {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                Intent intent = new Intent(GoogleLogin.this, FavsActivity.class);
+                startActivity(intent);
+            }
         }
     }
 }

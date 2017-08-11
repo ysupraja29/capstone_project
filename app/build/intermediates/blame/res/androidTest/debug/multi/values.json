@@ -1,50 +1,26 @@
 [
-    {
-        "outputFile": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "/Users/janardhanyerranagu/.android/build-cache/fddcaff93908f7c61503996d0c0a2f9ded5dd77f/output/res/values/values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "/Users/janardhanyerranagu/.android/build-cache/fddcaff93908f7c61503996d0c0a2f9ded5dd77f/output/res/values/values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    }
+  {
+    "outputFile": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+    "map": [
+      {
+        "to": {
+          "startLine": 2,
+          "startColumn": 4,
+          "startOffset": 55,
+          "endColumn": 45,
+          "endOffset": 96
+        },
+        "from": {
+          "file": "/Users/janardhanyerranagu/.android/build-cache/fddcaff93908f7c61503996d0c0a2f9ded5dd77f/output/res/values/values.xml",
+          "position": {
+            "startLine": 4,
+            "startColumn": 4,
+            "startOffset": 229,
+            "endColumn": 45,
+            "endOffset": 270
+          }
+        }
+      }
+    ]
+  }
 ]

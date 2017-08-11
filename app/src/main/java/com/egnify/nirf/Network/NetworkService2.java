@@ -3,7 +3,6 @@ package com.egnify.nirf.Network;
 
 import android.support.v4.util.LruCache;
 
-
 import java.io.IOException;
 
 import okhttp3.Interceptor;
@@ -13,8 +12,6 @@ import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Url;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -32,11 +29,11 @@ public class NetworkService2 {
     private LruCache<Class<?>, Observable<?>> apiObservables;
 
     public NetworkService2() {
-            this(baseUrl);
+        this(baseUrl);
 
     }
 
-    public NetworkService2(String baseUrl){
+    public NetworkService2(String baseUrl) {
         okHttpClient = buildClient();
         apiObservables = new LruCache<>(10);
         Retrofit retrofit = new Retrofit.Builder()
@@ -51,19 +48,21 @@ public class NetworkService2 {
 
     /**
      * Method to return the API interface.
+     *
      * @return
      */
-    public NetworkAPI getAPI(){
-        return  networkAPI;
+    public NetworkAPI getAPI() {
+        return networkAPI;
     }
 
 
     /**
      * Method to build and return an OkHttpClient so we can set/get
      * headers quickly and efficiently.
+     *
      * @return
      */
-    public OkHttpClient buildClient(){
+    public OkHttpClient buildClient() {
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
 
@@ -86,13 +85,13 @@ public class NetworkService2 {
             }
         });
 
-        return  builder.build();
+        return builder.build();
     }
 
     /**
      * Method to clear the entire cache of observables
      */
-    public void clearCache(){
+    public void clearCache() {
         apiObservables.evictAll();
     }
 
@@ -106,16 +105,15 @@ public class NetworkService2 {
      * @param useCache
      * @return Observable ready to be subscribed to
      */
-    public Observable<?> getPreparedObservable(Observable<?> unPreparedObservable, Class<?> clazz, boolean cacheObservable, boolean useCache){
+    public Observable<?> getPreparedObservable(Observable<?> unPreparedObservable, Class<?> clazz, boolean cacheObservable, boolean useCache) {
 
         Observable<?> preparedObservable = null;
 
-        if(useCache)//this way we don't reset anything in the cache if this is the only instance of us not wanting to use it.
+        if (useCache)//this way we don't reset anything in the cache if this is the only instance of us not wanting to use it.
             preparedObservable = apiObservables.get(clazz);
 
-        if(preparedObservable!=null)
+        if (preparedObservable != null)
             return preparedObservable;
-
 
 
         //we are here because we have never created this observable before or we didn't want to use the cache...
@@ -123,7 +121,7 @@ public class NetworkService2 {
         preparedObservable = unPreparedObservable.subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread());
 
-        if(cacheObservable){
+        if (cacheObservable) {
             preparedObservable = preparedObservable.cache();
             apiObservables.put(clazz, preparedObservable);
         }
@@ -139,10 +137,7 @@ public class NetworkService2 {
     public interface NetworkAPI {
 
 
-
-
     }
-
 
 
 }

@@ -1,10 +1,6 @@
 [
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/xml/collection_widget_info.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/xml/collection_widget_info.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/xml/collection_widget_info.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/xml/collection_widget_info.xml"
-    }
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/xml/collection_widget_info.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/xml/collection_widget_info.xml"
+  }
 ]

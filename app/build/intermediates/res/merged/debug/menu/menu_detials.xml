@@ -3,12 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.subhrajyoti.movies.MainActivity">
-    <item
-        android:id="@+id/fav"
-        android:icon="@drawable/heart"
-        android:orderInCategory="100"
-        app:showAsAction="always"
-        android:title="Fav" />
+    <item android:id="@+id/fav" android:icon="@drawable/heart" android:orderInCategory="100"
+        android:title="@string/fav" app:showAsAction="always" />
 
 
 </menu>

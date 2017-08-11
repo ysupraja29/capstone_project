@@ -18,7 +18,7 @@
     <string name="nirf_sub_heading2">Government of India</string>
     <string name="university">University</string>
     <string name="engg">Engineering</string>
-    <string name="managment">Managment</string>
+    <string name="managment">Management</string>
     <string name="pharm">Pharmacy</string>
     <string name="title_activity_main">NIRF</string>
     <string name="title_activity_engg">EnggActivity</string>
@@ -38,5 +38,22 @@
     <string name="score">Score</string>
     <string name="rank">Rank</string>
     <string name="retry">Retry</string>
+    <string name="minus">-</string>
+    <string name="all_india_rank">All India Rank</string>
+    <string name="state_rank">State Rank</string>
+    <string name="overall_score">Overall Score</string>
+    <string name="institute">Institute</string>
+    <string name="fav">Fav</string>
+    <string name="logo_des">College Logo</string>
+    <string name="uni_iv_des">University</string>
+    <string name="engg_iv_des">Engineering</string>
+    <string name="manag_iv_des">Management</string>
+    <string name="pharm_iv_des">Pharmacy</string>
+    <string name="app_logo">App Logo</string>
+    <string name="sub_metric">Sub Metric</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="play_error">Google Play Services error.</string>
+    <string name="title_activity_favs">FavsActivity</string>
+    <string name="nouser">No User Found.PLease Login</string>
 
 </resources>

@@ -55,7 +55,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.egnify.nirf.MainScreen.EnggActivity" />
         </activity>
-        <receiver android:name=".Widget.CollectionWidget">
+
+        <receiver android:name=".Widget.FavWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -65,10 +66,24 @@
                 android:resource="@xml/collection_widget_info" />
         </receiver>
 
-        <!-- 2. The service that will send our collection data to our widget. It needs the
-                permission android.permission.BIND_REMOTEVIEWS -->
-        <service android:name=".Widget.WidgetService"
-            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <!--
+             2. The service that will send our collection data to our widget. It needs the
+                permission android.permission.BIND_REMOTEVIEWS
+        -->
+
+        <provider
+            android:name=".favorites.FavsContentProvider"
+            android:authorities="com.egnify.nirf.contentprovider"></provider>
+
+        <activity
+            android:name=".favorites.FavsActivity"
+            android:label="@string/title_activity_favs"
+            android:parentActivityName=".GoogleLogin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.egnify.nirf.GoogleLogin" />
+        </activity>
     </application>
 
 </manifest>

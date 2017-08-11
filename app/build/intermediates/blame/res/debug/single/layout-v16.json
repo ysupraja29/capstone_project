@@ -1,10 +1,6 @@
 [
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout-v16/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout-v16/notification_template_custom_big.xml"
-    }
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout-v16/notification_template_custom_big.xml"
+  }
 ]

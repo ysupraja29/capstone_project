@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/logout.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xxxhdpi/logout.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/menu_up.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xxxhdpi/menu_up.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/menu_down.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xxxhdpi/menu_down.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/heart.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xxxhdpi/heart.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/heart_outline.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-xxxhdpi/heart_outline.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_person_white.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/drawable-xxxhdpi/ic_person_white.png"
+    }
+]

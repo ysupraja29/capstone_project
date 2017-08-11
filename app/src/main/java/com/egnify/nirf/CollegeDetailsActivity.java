@@ -1,11 +1,11 @@
 package com.egnify.nirf;
 
-import android.appwidget.AppWidgetManager;
-import android.content.ComponentName;
+import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,18 +19,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.egnify.nirf.MainScreen.college_pojo;
-import com.egnify.nirf.MainScreen.go_pojo;
-import com.egnify.nirf.MainScreen.oi_pojo;
-import com.egnify.nirf.MainScreen.perception_pojo;
-import com.egnify.nirf.MainScreen.rpc_pojo;
-import com.egnify.nirf.MainScreen.sub_metric_pojo;
-import com.egnify.nirf.MainScreen.tlr_pojo;
-import com.egnify.nirf.Provider.FavsDataSource;
-import com.egnify.nirf.Widget.CollectionWidget;
-import com.egnify.nirf.utils.app_url;
-import com.egnify.nirf.utils.p_MyCustomTextView_bold;
-import com.egnify.nirf.utils.p_MyCustomTextView_mbold;
+import com.egnify.nirf.MainScreen.CollegePojo;
+import com.egnify.nirf.MainScreen.GoPojo;
+import com.egnify.nirf.MainScreen.OiPojo;
+import com.egnify.nirf.MainScreen.PerceptionPojo;
+import com.egnify.nirf.MainScreen.RpcPojo;
+import com.egnify.nirf.MainScreen.SubMetricPojo;
+import com.egnify.nirf.MainScreen.TlrPojo;
+import com.egnify.nirf.Provider.MySQLiteHelper;
+import com.egnify.nirf.favorites.FavsContentProvider;
+import com.egnify.nirf.utils.AppUrl;
+import com.egnify.nirf.utils.MyCustomTextViewBold;
+import com.egnify.nirf.utils.MyCustomTextViewMbold;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.XAxis;
@@ -40,23 +40,37 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 
 import java.math.BigDecimal;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_CITY;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_COLLEGEID;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_ID;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_INSTITUTENAME;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_OVERALLSCORE;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_RANK;
+import static com.egnify.nirf.Provider.MySQLiteHelper.COLUMN_STATE;
+
 public class CollegeDetailsActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final int[] scale_chart = {Color.rgb(155, 200, 106), Color.rgb(90, 110, 176), Color.rgb(69, 168, 214), Color.rgb(251, 177, 78), Color.rgb(266, 87, 71)};
     LinearLayout all, tlr, rpc, go, oi, per;
     ImageView all_iv, tlr_iv, rpc_iv, go_iv, oi_iv, per_iv;
-    p_MyCustomTextView_mbold all_tv, tlr_tv, rpc_tv, go_tv, oi_tv, per_tv;
+    MyCustomTextViewMbold all_tv, tlr_tv, rpc_tv, go_tv, oi_tv, per_tv;
     Toolbar toolbar;
-    public static final int[] scale_chart = {Color.rgb(155, 200, 106), Color.rgb(90, 110, 176), Color.rgb(69, 168, 214), Color.rgb(251, 177, 78), Color.rgb(266, 87, 71)};
     String[] scale_hex = {"#9BC86A", "#5A6EB0", "#45A8D6", "#FBB14E", "#E25747"};
-    private college_pojo clg_pojo;
-    p_MyCustomTextView_bold all_india, state_rank, overall_score;
+    MyCustomTextViewBold all_india, state_rank, overall_score;
     //  p_MyCustomTextView_mbold metric_heading;
     int i = 0;
     String[] Main_headings = {"OverAll", "Teaching, Learning & Resources", "Research and Professional Practice", "Graduation Outcomes", "Outreach and Inclusivity", "Perception"};
-    private FavsDataSource datasource;
+    private CollegePojo clg_pojo;
+    private Uri todoUri;
+    // private FavsDataSource datasource;
+
+    public static float round(float d, int decimalPlace) {
+        BigDecimal bd = new BigDecimal(Float.toString(d));
+        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
+        return bd.floatValue();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,21 +80,32 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("OverAll");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        clg_pojo = (college_pojo) getIntent().getSerializableExtra("college_pojo");
-        p_MyCustomTextView_mbold name = (p_MyCustomTextView_mbold) findViewById(R.id.name);
-        p_MyCustomTextView_mbold college_id = (p_MyCustomTextView_mbold) findViewById(R.id.college_id);
-        p_MyCustomTextView_mbold location = (p_MyCustomTextView_mbold) findViewById(R.id.location);
-        datasource = new FavsDataSource(this);
+        clg_pojo = (CollegePojo) getIntent().getSerializableExtra("CollegePojo");
+        MyCustomTextViewMbold name = (MyCustomTextViewMbold) findViewById(R.id.name);
+        MyCustomTextViewMbold college_id = (MyCustomTextViewMbold) findViewById(R.id.college_id);
+        MyCustomTextViewMbold location = (MyCustomTextViewMbold) findViewById(R.id.location);
+        //  datasource = new FavsDataSource(this);
         ImageView logo = (ImageView) findViewById(R.id.logo);
         name.setText(clg_pojo.getInstitute_name());
         college_id.setText(clg_pojo.getCollege_id());
         location.setText(clg_pojo.getCity() + "," + clg_pojo.getState());
-        String url = app_url.image_url + clg_pojo.getCollege_id() + ".png";
+        String url = AppUrl.image_url + clg_pojo.getCollege_id() + ".png";
         Glide.with(CollegeDetailsActivity.this).load(url).into(logo);
 
-        all_india = (p_MyCustomTextView_bold) findViewById(R.id.all_india);
-        state_rank = (p_MyCustomTextView_bold) findViewById(R.id.state_rank);
-        overall_score = (p_MyCustomTextView_bold) findViewById(R.id.overall_score);
+        Bundle extras = getIntent().getExtras();
+
+        // check from the saved Instance
+        todoUri = (savedInstanceState == null) ? null : (Uri) savedInstanceState
+                .getParcelable(FavsContentProvider.CONTENT_ITEM_TYPE);
+
+        // Or passed from the other activity
+        if (extras != null) {
+            todoUri = extras
+                    .getParcelable(FavsContentProvider.CONTENT_ITEM_TYPE);
+        }
+        all_india = (MyCustomTextViewBold) findViewById(R.id.all_india);
+        state_rank = (MyCustomTextViewBold) findViewById(R.id.state_rank);
+        overall_score = (MyCustomTextViewBold) findViewById(R.id.overall_score);
         // metric_heading=(p_MyCustomTextView_mbold) findViewById(R.id.metric_heading);
         all = (LinearLayout) findViewById(R.id.all);
         tlr = (LinearLayout) findViewById(R.id.tlr);
@@ -96,12 +121,12 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         oi_iv = (ImageView) findViewById(R.id.oi_iv);
         per_iv = (ImageView) findViewById(R.id.per_iv);
 
-        all_tv = (p_MyCustomTextView_mbold) findViewById(R.id.all_tv);
-        tlr_tv = (p_MyCustomTextView_mbold) findViewById(R.id.tlr_tv);
-        rpc_tv = (p_MyCustomTextView_mbold) findViewById(R.id.rpc_tv);
-        go_tv = (p_MyCustomTextView_mbold) findViewById(R.id.go_tv);
-        oi_tv = (p_MyCustomTextView_mbold) findViewById(R.id.oi_tv);
-        per_tv = (p_MyCustomTextView_mbold) findViewById(R.id.per_tv);
+        all_tv = (MyCustomTextViewMbold) findViewById(R.id.all_tv);
+        tlr_tv = (MyCustomTextViewMbold) findViewById(R.id.tlr_tv);
+        rpc_tv = (MyCustomTextViewMbold) findViewById(R.id.rpc_tv);
+        go_tv = (MyCustomTextViewMbold) findViewById(R.id.go_tv);
+        oi_tv = (MyCustomTextViewMbold) findViewById(R.id.oi_tv);
+        per_tv = (MyCustomTextViewMbold) findViewById(R.id.per_tv);
 
         all.setOnClickListener(this);
         tlr.setOnClickListener(this);
@@ -118,7 +143,6 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         settonormal(per_iv, per_tv);
     }
 
-
     @Override
     public void onClick(View v) {
         int id = v.getId();
@@ -132,7 +156,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             settoblack(all_iv, all_tv, 0);
             settonormal(per_iv, per_tv);
         } else if (id == R.id.tlr) {
-            tlr_pojo tlrPojo = clg_pojo.getTlr();
+            TlrPojo tlrPojo = clg_pojo.getTlr();
             setTlrAdapter(tlrPojo);
 
             settonormal(all_iv, all_tv);
@@ -142,7 +166,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             settonormal(per_iv, per_tv);
             settoblack(tlr_iv, tlr_tv, 1);
         } else if (id == R.id.rpc) {
-            rpc_pojo rpcPojo = clg_pojo.getRpc();
+            RpcPojo rpcPojo = clg_pojo.getRpc();
             settonormal(all_iv, all_tv);
             settonormal(tlr_iv, tlr_tv);
             settonormal(go_iv, go_tv);
@@ -151,7 +175,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             settoblack(rpc_iv, rpc_tv, 2);
             setRPCAdapter(rpcPojo);
         } else if (id == R.id.go) {
-            go_pojo goPojo = clg_pojo.getGo();
+            GoPojo goPojo = clg_pojo.getGo();
             settonormal(all_iv, all_tv);
             settonormal(tlr_iv, tlr_tv);
             settonormal(rpc_iv, rpc_tv);
@@ -160,7 +184,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             settoblack(go_iv, go_tv, 3);
             setGOAdapter(goPojo);
         } else if (id == R.id.oi) {
-            oi_pojo oiPojo = clg_pojo.getOi();
+            OiPojo oiPojo = clg_pojo.getOi();
             settonormal(all_iv, all_tv);
             settonormal(tlr_iv, tlr_tv);
             settonormal(rpc_iv, rpc_tv);
@@ -169,7 +193,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
             settoblack(oi_iv, oi_tv, 4);
             setOIAdapter(oiPojo);
         } else if (id == R.id.per) {
-            perception_pojo perceptionPojo = clg_pojo.getPerception();
+            PerceptionPojo perceptionPojo = clg_pojo.getPerception();
             settonormal(all_iv, all_tv);
             settonormal(tlr_iv, tlr_tv);
             settonormal(rpc_iv, rpc_tv);
@@ -180,8 +204,8 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         }
     }
 
-    private void setPerAdapter(perception_pojo perceptionPojo) {
-        perception_pojo loc_per = perceptionPojo;
+    private void setPerAdapter(PerceptionPojo perceptionPojo) {
+        PerceptionPojo loc_per = perceptionPojo;
         double tlr_s = Double.parseDouble(loc_per.getPerception_score());
         int tlr_sr = Integer.parseInt(loc_per.getPerception_state_rank());
         int tlr_r = loc_per.getPerception_rank();
@@ -189,7 +213,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         state_rank.setText(String.valueOf(tlr_sr));
         overall_score.setText(String.valueOf(tlr_s));
         //  metric_heading.setText(Main_headings[5]);
-        ArrayList<sub_metric_pojo> sub_metric_poj = loc_per.getPerception_sub();
+        ArrayList<SubMetricPojo> sub_metric_poj = loc_per.getPerception_sub();
         float[] per_values = get_values(sub_metric_poj);
         String[] labels = get_labels(sub_metric_poj);
         int[] chart_colors = get_colors(sub_metric_poj);
@@ -216,8 +240,8 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         setchart(bar_chart, per_values, labels, chart_colors);
     }
 
-    private void setOIAdapter(oi_pojo oiPojo) {
-        oi_pojo loc_oi = oiPojo;
+    private void setOIAdapter(OiPojo oiPojo) {
+        OiPojo loc_oi = oiPojo;
         double tlr_s = Double.parseDouble(loc_oi.getOi_score());
         int tlr_sr = Integer.parseInt(loc_oi.getOi_state_rank());
         int tlr_r = loc_oi.getOi_rank();
@@ -226,7 +250,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         state_rank.setText(String.valueOf(tlr_sr));
         overall_score.setText(String.valueOf(tlr_s));
         //  metric_heading.setText(Main_headings[4]);
-        ArrayList<sub_metric_pojo> sub_metric_poj = loc_oi.getOi_sub();
+        ArrayList<SubMetricPojo> sub_metric_poj = loc_oi.getOi_sub();
         float[] per_values = get_values(sub_metric_poj);
         String[] labels = get_labels(sub_metric_poj);
         int[] chart_colors = get_colors(sub_metric_poj);
@@ -252,8 +276,8 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         setchart(bar_chart, per_values, labels, chart_colors);
     }
 
-    private void setGOAdapter(go_pojo goPojo) {
-        go_pojo loc_go = goPojo;
+    private void setGOAdapter(GoPojo goPojo) {
+        GoPojo loc_go = goPojo;
         double tlr_s = Double.parseDouble(loc_go.getGo_score());
         int tlr_sr = Integer.parseInt(loc_go.getGo_state_rank());
         int tlr_r = loc_go.getGo_rank();
@@ -261,7 +285,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         all_india.setText(String.valueOf(tlr_r));
         state_rank.setText(String.valueOf(tlr_sr));
         overall_score.setText(String.valueOf(tlr_s));
-        ArrayList<sub_metric_pojo> sub_metric_poj = loc_go.getGo_sub();
+        ArrayList<SubMetricPojo> sub_metric_poj = loc_go.getGo_sub();
         float[] per_values = get_values(sub_metric_poj);
         String[] labels = get_labels(sub_metric_poj);
         int[] chart_colors = get_colors(sub_metric_poj);
@@ -286,8 +310,8 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         setchart(bar_chart, per_values, labels, chart_colors);
     }
 
-    private void setTlrAdapter(tlr_pojo tlrPojo) {
-        tlr_pojo loc_tlr = tlrPojo;
+    private void setTlrAdapter(TlrPojo tlrPojo) {
+        TlrPojo loc_tlr = tlrPojo;
         double tlr_s = Double.parseDouble(tlrPojo.getTlr_score());
         int tlr_sr = Integer.parseInt(tlrPojo.getTlr_state_rank());
         int tlr_r = tlrPojo.getTlr_rank();
@@ -295,7 +319,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         all_india.setText(String.valueOf(tlr_r));
         state_rank.setText(String.valueOf(tlr_sr));
         overall_score.setText(String.valueOf(tlr_s));
-        ArrayList<sub_metric_pojo> sub_metric_poj = loc_tlr.getTlr_sub();
+        ArrayList<SubMetricPojo> sub_metric_poj = loc_tlr.getTlr_sub();
         float[] per_values = get_values(sub_metric_poj);
         String[] labels = get_labels(sub_metric_poj);
         int[] chart_colors = get_colors(sub_metric_poj);
@@ -322,8 +346,8 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
 
     }
 
-    private void setRPCAdapter(rpc_pojo rpcPojo) {
-        rpc_pojo loc_rpc = rpcPojo;
+    private void setRPCAdapter(RpcPojo rpcPojo) {
+        RpcPojo loc_rpc = rpcPojo;
         double tlr_s = Double.parseDouble(loc_rpc.getRpc_score());
         int tlr_sr = Integer.parseInt(loc_rpc.getRpc_state_rank());
         int tlr_r = loc_rpc.getRpc_rank();
@@ -331,7 +355,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         all_india.setText(String.valueOf(tlr_r));
         state_rank.setText(String.valueOf(tlr_sr));
         overall_score.setText(String.valueOf(tlr_s));
-        ArrayList<sub_metric_pojo> sub_metric_poj = loc_rpc.getRpc_sub();
+        ArrayList<SubMetricPojo> sub_metric_poj = loc_rpc.getRpc_sub();
         float[] per_values = get_values(sub_metric_poj);
         String[] labels = get_labels(sub_metric_poj);
         int[] chart_colors = get_colors(sub_metric_poj);
@@ -358,48 +382,46 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
 
     }
 
-
-    private int[] get_colors(ArrayList<sub_metric_pojo> sub_metric_poj) {
+    private int[] get_colors(ArrayList<SubMetricPojo> sub_metric_poj) {
         int[] per_values = new int[sub_metric_poj.size()];
 
         for (int i = 0; i < sub_metric_poj.size(); i++) {
-            sub_metric_pojo optionsPojo = sub_metric_poj.get(i);
+            SubMetricPojo optionsPojo = sub_metric_poj.get(i);
             per_values[i] = get_hex_chart(Float.parseFloat(optionsPojo.getSub_metric_value()));
         }
         return per_values;
     }
 
-
-    private String[] get_labels(ArrayList<sub_metric_pojo> sub_metric_poj) {
+    private String[] get_labels(ArrayList<SubMetricPojo> sub_metric_poj) {
         String[] per_values = new String[sub_metric_poj.size()];
 
         for (int i = 0; i < sub_metric_poj.size(); i++) {
-            sub_metric_pojo optionsPojo = sub_metric_poj.get(i);
+            SubMetricPojo optionsPojo = sub_metric_poj.get(i);
             per_values[i] = optionsPojo.getSub_metric();
         }
         return per_values;
     }
 
-    private float[] get_values(ArrayList<sub_metric_pojo> sub_metric_poj) {
+    private float[] get_values(ArrayList<SubMetricPojo> sub_metric_poj) {
         float[] per_values = new float[sub_metric_poj.size()];
 
         for (int i = 0; i < sub_metric_poj.size(); i++) {
-            sub_metric_pojo optionsPojo = sub_metric_poj.get(i);
+            SubMetricPojo optionsPojo = sub_metric_poj.get(i);
             per_values[i] = Float.parseFloat(optionsPojo.getSub_metric_value());
         }
         return per_values;
     }
 
-    private void setAllAdapter(college_pojo clg_pojo) {
+    private void setAllAdapter(CollegePojo clg_pojo) {
         all_india.setText(String.valueOf(clg_pojo.getRank()));
         state_rank.setText(String.valueOf(clg_pojo.getRank()));
         overall_score.setText(String.valueOf(clg_pojo.getOverall_score()));
         //  metric_heading.setText("OverAll");
-        tlr_pojo loc_tlr = clg_pojo.getTlr();
-        rpc_pojo loc_rpc = clg_pojo.getRpc();
-        go_pojo loc_go = clg_pojo.getGo();
-        oi_pojo loc_oi = clg_pojo.getOi();
-        perception_pojo loc_per = clg_pojo.getPerception();
+        TlrPojo loc_tlr = clg_pojo.getTlr();
+        RpcPojo loc_rpc = clg_pojo.getRpc();
+        GoPojo loc_go = clg_pojo.getGo();
+        OiPojo loc_oi = clg_pojo.getOi();
+        PerceptionPojo loc_per = clg_pojo.getPerception();
 
         float[] per_values = new float[5];
         String[] labels = {"TLR", "RPC", "GO", "OI", "PER"};
@@ -434,7 +456,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
 
     }
 
-    private void settonormal(ImageView imageView, p_MyCustomTextView_mbold metric) {
+    private void settonormal(ImageView imageView, MyCustomTextViewMbold metric) {
         int color = Color.parseColor("#FFFFFF"); //The color u want
         imageView.setColorFilter(color);
         metric.setTextColor(getResources().getColor(R.color.white));
@@ -443,7 +465,7 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
 
     }
 
-    private void settoblack(ImageView imageView, p_MyCustomTextView_mbold metric, int i) {
+    private void settoblack(ImageView imageView, MyCustomTextViewMbold metric, int i) {
         int color = Color.parseColor("#FFFFFF");
         if (i == 0) {
             color = Color.parseColor("#FFFFFF");
@@ -511,7 +533,6 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -527,62 +548,34 @@ public class CollegeDetailsActivity extends AppCompatActivity implements View.On
         return super.onOptionsItemSelected(item);
     }
 
-    private class FavoriteActionAsyncTask extends AsyncTask<Void, Void, Void> {
-        final Context mContext;
-        MenuItem mitem;
+//    private void update_widget() {
+//        Intent intent = new Intent(this, CollectionWidget.class);
+//        intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+//        int ids[] = AppWidgetManager.getInstance(getApplication()).getAppWidgetIds(new ComponentName(getApplication(), CollectionWidget.class));
+//        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+//        sendBroadcast(intent);
+//    }
 
-        public FavoriteActionAsyncTask(Context context, MenuItem item) {
-            mContext = context;
-            mitem = item;
-        }
-
-        @Override
-        protected Void doInBackground(Void... params) {
-            final Drawable drawable;
-            boolean isFav = getfav();
-
-            if (!isFav) {
-
-                datasource.createComment(clg_pojo);
-                drawable = getDrawable(R.drawable.heart);//R.drawable.heart_outline;
-
-
-            } else {
-
-                datasource.deleteComment(clg_pojo);
-                drawable = getDrawable(R.drawable.heart_outline);//R.drawable.heart_outline;
-            }
-            update_widget();
-
-
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mitem.setIcon(drawable);
-
-                }
-            });
-
-
-
-            return null;
-        }
-
-
-    }
-private void update_widget()
-{
-    Intent intent = new Intent(this, CollectionWidget.class);
-    intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
-    int ids[] = AppWidgetManager.getInstance(getApplication()).getAppWidgetIds(new ComponentName(getApplication(), CollectionWidget.class));
-    intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS,ids);
-    sendBroadcast(intent);
-}
     private boolean getfav() {
         boolean issthere;
-        issthere = datasource.isFavorite(clg_pojo);
+
+        issthere = isFavorite(clg_pojo);
 
         return issthere;
+    }
+
+    private boolean isFavorite(CollegePojo clg_pojo) {
+        boolean isfav = true;
+        String[] available = {COLUMN_ID, COLUMN_COLLEGEID, COLUMN_INSTITUTENAME, COLUMN_CITY, COLUMN_STATE, COLUMN_OVERALLSCORE, COLUMN_RANK};
+
+//        Uri todoUri = Uri.parse(FavsContentProvider.CONTENT_URI + "/" + clg_pojo.getCollege_id());
+        Cursor cursor = getContentResolver().query(todoUri, available, null, null, null);
+
+        // Cursor c = getContentResolver().query(todoUri, null,available, null, null);
+        if (cursor.getCount() == 0) {
+            isfav = false;
+        }
+        return isfav;
     }
 
 
@@ -658,10 +651,71 @@ private void update_widget()
 
     }
 
-    public static float round(float d, int decimalPlace) {
-        BigDecimal bd = new BigDecimal(Float.toString(d));
-        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
-        return bd.floatValue();
+    private void deleteComment(CollegePojo clg_pojo) {
+//        Uri uri = Uri.parse(FavsContentProvider.CONTENT_URI + "/"
+//                + clg_pojo.getCollege_id());
+        getContentResolver().delete(todoUri, null, null);
+    }
+
+    private void createComment(CollegePojo college_info) {
+        ContentValues values = new ContentValues();
+        values.put(MySQLiteHelper.COLUMN_ID, college_info.getId());
+        values.put(MySQLiteHelper.COLUMN_COLLEGEID, college_info.getCollege_id());
+        values.put(MySQLiteHelper.COLUMN_INSTITUTENAME, college_info.getInstitute_name());
+        values.put(MySQLiteHelper.COLUMN_CITY, college_info.getCity());
+        values.put(MySQLiteHelper.COLUMN_STATE, college_info.getState());
+        values.put(MySQLiteHelper.COLUMN_OVERALLSCORE, college_info.getOverall_score());
+        values.put(MySQLiteHelper.COLUMN_RANK, college_info.getRank());
+        getContentResolver().insert(
+                FavsContentProvider.CONTENT_URI, values);
+//        } else {
+//            // Update todo
+//            getContentResolver().update(todoUri, values, null, null);
+//        }
+
+    }
+
+    private class FavoriteActionAsyncTask extends AsyncTask<Void, Void, Void> {
+        final Context mContext;
+        MenuItem mitem;
+
+        public FavoriteActionAsyncTask(Context context, MenuItem item) {
+            mContext = context;
+            mitem = item;
+        }
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            final Drawable drawable;
+            boolean isFav = getfav();
+
+            if (!isFav) {
+
+                createComment(clg_pojo);
+                drawable = getDrawable(R.drawable.heart);//R.drawable.heart_outline;
+
+
+            } else {
+
+                deleteComment(clg_pojo);
+                drawable = getDrawable(R.drawable.heart_outline);//R.drawable.heart_outline;
+            }
+            // update_widget();
+
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mitem.setIcon(drawable);
+
+                }
+            });
+
+
+            return null;
+        }
+
+
     }
 
 }

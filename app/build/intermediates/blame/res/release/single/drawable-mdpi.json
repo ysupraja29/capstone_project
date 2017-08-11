@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/menu_up.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-mdpi/menu_up.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/menu_down.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-mdpi/menu_down.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/ic_person_white.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/drawable-mdpi/ic_person_white.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/heart.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-mdpi/heart.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/firebase_lockup_400.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/drawable-mdpi/firebase_lockup_400.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/heart_outline.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-mdpi/heart_outline.png"
+    },
+    {
+        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/release/drawable-mdpi/logout.png",
+        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/generated/res/pngs/release/drawable-mdpi/logout.png"
+    }
+]

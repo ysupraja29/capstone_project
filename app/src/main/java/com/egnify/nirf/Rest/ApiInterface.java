@@ -1,7 +1,7 @@
 package com.egnify.nirf.Rest;
 
 
-import com.egnify.nirf.MainScreen.college_response;
+import com.egnify.nirf.MainScreen.CollegeResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,7 +12,7 @@ public interface ApiInterface {
 
 
     @GET
-    Call<college_response> get_colleges(@Url String url);
+    Call<CollegeResponse> get_colleges(@Url String url);
 
 
 }

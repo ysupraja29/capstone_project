@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.egnify.nirf.MainScreen.college_pojo;
+import com.egnify.nirf.MainScreen.CollegePojo;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public class FavsDataSource {
         dbHelper.close();
     }
 
-    public college_pojo createComment(college_pojo college_info) {
+    public CollegePojo createComment(CollegePojo college_info) {
         try {
             open();
         } catch (SQLException e) {
@@ -60,13 +60,13 @@ public class FavsDataSource {
         cursor.moveToFirst();
         System.out.println("Comment added with id: " + college_info.getCollege_id());
 
-        college_pojo newComment = cursorToComment(cursor);
+        CollegePojo newComment = cursorToComment(cursor);
         cursor.close();
         close();
         return newComment;
     }
 
-    public void deleteComment(college_pojo college_info) {
+    public void deleteComment(CollegePojo college_info) {
         try {
             open();
         } catch (SQLException e) {
@@ -75,11 +75,11 @@ public class FavsDataSource {
         String id = college_info.getCollege_id();
         System.out.println("Comment deleted with id: " + id);
         database.delete(MySQLiteHelper.TABLE_COLLEGEINFO, MySQLiteHelper.COLUMN_COLLEGEID
-                + " = " +"'" +id+"'", null);
+                + " = " + "'" + id + "'", null);
         close();
     }
 
-    public boolean isFavorite(college_pojo college_info) {
+    public boolean isFavorite(CollegePojo college_info) {
         try {
             open();
         } catch (SQLException e) {
@@ -114,20 +114,20 @@ public class FavsDataSource {
         return hasObject;
     }
 
-    public List<college_pojo> getAllComments() {
+    public List<CollegePojo> getAllComments() {
         try {
             open();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        List<college_pojo> college_infos = new ArrayList<college_pojo>();
+        List<CollegePojo> college_infos = new ArrayList<CollegePojo>();
 
         Cursor cursor = database.query(MySQLiteHelper.TABLE_COLLEGEINFO,
                 allColumns, null, null, null, null, null);
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            college_pojo college_info = cursorToComment(cursor);
+            CollegePojo college_info = cursorToComment(cursor);
             college_infos.add(college_info);
             cursor.moveToNext();
         }
@@ -137,8 +137,8 @@ public class FavsDataSource {
         return college_infos;
     }
 
-    private college_pojo cursorToComment(Cursor cursor) {
-        college_pojo college_info = new college_pojo();
+    private CollegePojo cursorToComment(Cursor cursor) {
+        CollegePojo college_info = new CollegePojo();
         college_info.setId(cursor.getLong(0));
         college_info.setCollege_id(cursor.getString(1));
         college_info.setInstitute_name(cursor.getString(2));

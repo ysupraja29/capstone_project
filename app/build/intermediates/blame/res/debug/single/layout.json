@@ -1,566 +1,286 @@
 [
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/content_google_login.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/content_google_login.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/widget_view.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/widget_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_time.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/fav_widget_layout.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/fav_widget_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/college_item.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/college_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/activity_google_login.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/activity_google_login.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1139598f9f27eef2543aa20249599b8f22edfb4e/output/res/layout/notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_lines_media.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_google_login.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_google_login.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_college_details.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_college_details.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/college_item.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/college_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/legend_row.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/legend_row.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar_include.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/widget_info.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/widget_info.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_engg.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_engg.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_engg.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_engg.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/after_login_content_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/after_login_content_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/activity_engg.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/activity_engg.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/content_college_details.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/content_college_details.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/after_login_content_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/after_login_content_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_navigation_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/after_login_activity_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/after_login_activity_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1139598f9f27eef2543aa20249599b8f22edfb4e/output/res/layout/notification_media_action.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_google_login.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_google_login.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_subheader.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1139598f9f27eef2543aa20249599b8f22edfb4e/output/res/layout/notification_template_big_media.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/activity_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/fav_widget_layout.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/fav_widget_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1139598f9f27eef2543aa20249599b8f22edfb4e/output/res/layout/notification_media_cancel_action.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_item_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/activity_college_details.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/activity_college_details.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_lines_media.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/widget_view.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/widget_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/content_engg.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/content_engg.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/content_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/content_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/widget_info.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/widget_info.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_college_details.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_college_details.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_subheader.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar_include.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1139598f9f27eef2543aa20249599b8f22edfb4e/output/res/layout/notification_template_lines.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/legend_row.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/legend_row.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_text_input_password_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media_custom.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_navigation_item.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media_custom.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/after_login_activity_main.xml",
-        "source": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/src/main/res/layout/after_login_activity_main.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_text_input_password_icon.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/my_projects/Nirf/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_time.xml"
-    }
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_google_login.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_google_login.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_checkbox.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_favs.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_favs.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/widget_view.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/widget_view.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_menu_item_action_area.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_icon.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_toolbar.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_header.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/fav_widget_layout.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/fav_widget_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_main.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_main.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_header_item_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view_list_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_item_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_multichoice_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/college_item.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/college_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_content_include.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_text.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_expanded_menu_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/select_dialog_singlechoice_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_favs.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_favs.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_tab_icon.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_lines_media.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_select_dialog_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_menu_item_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action_tombstone.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_close_item_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_radio.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/widget_info.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/widget_info.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_college_details.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_college_details.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_google_login.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_google_login.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_icon_group.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_subheader.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_college_details.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_college_details.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_sheet_dialog.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/legend_row.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/legend_row.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_layout_snackbar_include.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_activity_chooser_view.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_engg.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_engg.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_title_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_action.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_dialog_title_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/content_engg.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/content_engg.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_text_input_password_icon.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_media_custom.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/support_simple_spinner_dropdown_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/after_login_content_main.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/after_login_content_main.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/post_widget.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/post_widget.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_bottom_navigation_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_search_view.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_popup_menu_item_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_bar_up_container.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu_item.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_menu.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_chronometer.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_alert_dialog_title_material.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/activity_main.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_action_mode_bar.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_list_menu_item_layout.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/1d0393c442ce5834a4033ce6bab94399299fbf33/output/res/layout/design_navigation_item_separator.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/abc_screen_simple.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+    "source": "/Users/janardhanyerranagu/.android/build-cache/2bcd15aa28d315d1aaa5d25c6f71ea13e23577f5/output/res/layout/notification_template_part_time.xml"
+  },
+  {
+    "merged": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/build/intermediates/res/merged/debug/layout/after_login_activity_main.xml",
+    "source": "/Users/janardhanyerranagu/Stuff/Android ND/capstone_project/app/src/main/res/layout/after_login_activity_main.xml"
+  }
 ]
